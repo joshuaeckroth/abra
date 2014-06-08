@@ -8,4 +8,6 @@
 ; I cannot use this because sbcl compiles the files to a different location.
 
 
-(setf *examples-folder* "/path/to/example/directory/")  
+;;(setf *examples-folder* "/path/to/example/directory/")
+(setf *examples-folder* "c:\\users\\joshua\\documents\\github\\abra\\examples\\")
+
