@@ -1,0 +1,4632 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+PlanCorpus (number of sessions: 457)
+(
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(ls(,**dot_0**))
+	(rm(,pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,linux))
+	(ls(,**dot_2**))
+	(cd(,gang))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(cd(,**dotdot_4**))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,code))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(cd(,mail))
+	(ls(,**dot_9**))
+	(cd(,2))
+	(ls(,**dot_10**))
+	(cd(,mickey))
+	(ls(,**dot_11**))
+	(cd(,**dotdot_11**))
+	(cd(,set))
+	(ls(,**dot_13**))
+	(cd(,**dotdot_13**))
+	(ls(,**dot_14**))
+	(cd(,**dotdot_14**))
+	(ls(,**dot_15**))
+	(cd(,dwarf))
+	(ls(,**dot_16**))
+	(cd(,gang))
+	(ls(,**dot_17**))
+	(cd(,**dotdot_17**))
+	(ls(,**dot_18**))
+	(cd(,true))
+	(ls(,**dot_19**))
+	(cd(,**dotdot_19**))
+	(ls(,**dot_20**))
+	(cd(,**dotdot_20**))
+	(ls(,**dot_21**))
+	(cd(,gag))
+	(cd(,gang))
+	(ls(,**dot_23**))
+	(cd(,3))
+	(ls(,**dot_24**))
+	(cd(,**dotdot_24**))
+	(cd(,dwarf))
+	(ls(,**dot_26**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(cd(,**dotdot_2**))
+	(tar(,-,,gang))
+	(tar(,-,,gang))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,code))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(cd(,mail))
+	(ls(,**dot_7**))
+	(tar(,-,,gang))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(gang)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,3))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,code))
+	(ls(,**dot_5**))
+	(cd(,dwarf))
+	(ls(,**dot_6**))
+	(tar(,-,,gang))
+	(cd(,**dotdot_6**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,mail))
+	(ls(,**dot_9**))
+	(cd(,2))
+	(ls(,**dot_10**))
+	(cd(,intro))
+	(ls(,**dot_11**))
+	(cd(,**dotdot_11**))
+	(cd(,set))
+	(ls(,**dot_13**))
+	(cd(,**dotdot_13**))
+	(cd(,**dotdot_14**))
+	(ls(,**dot_15**))
+	(cd(,dwarf))
+	(ls(,**dot_16**))
+	(cd(,**dotdot_16**))
+	(cd(,mickey))
+	(ls(,**dot_18**))
+	(tar(,-,,gang))
+	(cd(,true))
+	(ls(,**dot_19**))
+	(cd(,**dotdot_19**))
+	(cd(,**dotdot_20**))
+	(ls(,**dot_21**))
+	(cd(,**dotdot_21**))
+	(ls(,**dot_22**))
+	(cd(,code))
+	(ls(,**dot_23**))
+	(cd(,dwarf))
+	(ls(,**dot_24**))
+	(cd(,**dotdot_24**))
+	(cd(,linux))
+	(ls(,**dot_26**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,,,,**dot_0**),find(,,,,README))
+	(cd(bin,linux))
+	(ls(,**dot_1**))
+	(find(,,,,**dot_1**),find(,,,,REAME))
+	(find(,,,,**dot_1**),find(,,,,README))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(gang)
+	(find(,,,,gang))
+	(find(,,,,**dot_0**),find(,,,,gang))
+	(cd(bin,mickey))
+	(ls(,**dot_1**))
+	(tar(,-,,gang))
+	(cd(,**dotdot_1**))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(,mail))
+	(ls(,**dot_4**))
+	(tar(,-,,gang))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,**dot_0**))
+	(find(,,,,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(tar(,dwarf.tar.gz,,dwarf))
+	(tar(,dwarf.tar.gz,,dwarf))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,code))
+	(ls(,**dot_5**))
+	(cd(,gang))
+	(ls(,**dot_6**))
+	(tar(,dwarf.tar.gz,,dwarf))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(gang)
+	(find(,gang,,,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(cd(,code))
+	(cd(,gang))
+	(ls(,**dot_4**))
+	(tar(,gang.tar.gz,,gang))
+	(cd(,**dotdot_4**))
+	(ls(,**dot_5**))
+	(tar(,gang.tar.gz,,gang))
+	(cd(,**dotdot_5**))
+	(cd(,mail))
+	(ls(,**dot_7**))
+	(cd(,dwraf))
+	(cd(,dwarf))
+	(ls(,**dot_9**))
+	(tar(,gang.tar.gz,,gang))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(canberra)
+	(ping(canberra,))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(,ps14.txt))
+	(find(,ps14.txt,,,**dot_0**))
+	(ls(./code/2/true,ps14.txt))
+	(cat(./code/2/true,ps14.txt))
+	(ls(./code/2/true,ps14.txt))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(find(,pl,,,**dot_0**))
+	(find(,pl,,,**dot_0**))
+	(rm(code/gang,constructor.pl))
+	(rm(code/intro,aml.pl))
+	(rm(code/set,convert.pl))
+	(rm(mail/true/dwarf,accessor.pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+	(find(,libtool,,,**dot_0**))
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,gang)
+	(find(,aml,,,**dot_0**))
+	(find(,aml,,,**dot_0**))
+	(man(find))
+	(find(,,,,**dot_0**))
+	(mv(/mail,gang,/mail/gang/intro,aml))
+	(mv(,mail.gang,mail/gang/intro,aml))
+	(mv(mail,gang,mail/gang/intro,aml))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(ls(,**dot_0**))
+	(mv(,dwarf,,ps))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(**dotdot_1**,code))
+	(ls(,**dot_2**))
+	(ls(,rl.exe))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,dwarf)
+	(cd(,doce))
+	(cd(,code))
+	(ls(,**dot_2**))
+	(cd(**dotdot_2**,bin))
+	(ls(,**dot_3**))
+	(cd(**dotdot_3**,mail))
+	(ls(,**dot_4**))
+	(mv(,dwarf,../bin,pl))
+	(ls(,dwarf))
+	(cd(,**dotdot_4**))
+	(ls(,**dot_5**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(ls(,**dot_0**))
+	(ls(*,**dot_0**))
+	(ls(*/*,**dot_0**))
+
+,
+*******************************************
+Goal: create-dir(egg_salad.exe,gang)
+	(cd(mail,gang))
+	(cd(,mail))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(,code))
+	(ls(,**dot_4**))
+	(cd(**dotdot_4**,bin))
+	(ls(,**dot_5**))
+	(ls(*,**dot_5**))
+	(cd(intro/2,gang))
+	(ls(,**dot_6**))
+	(mkdir(,egg_salad.exe))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(ls(,**dot_0**))
+	(find(,gang,,,**dot_0**))
+	(cd(code,set))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(tar(,gang1.tar,,**dot_2**))
+	(gzip(,gang1.tar))
+	(mv(,greg.tar,,gang1.tar))
+	(ls(,**dot_2**))
+	(mv(,greg.tar.gz,,ga1.tar.gz))
+	(mv(,greg.tar.gz,,gang1.tar.gz))
+	(cd(../../code,gang))
+	(cd(../..,gang))
+	(tar(,gang.tar,,**dot_4**))
+	(gzip(,gang.tar))
+	(cd(../../mail/dwarf,gang))
+	(tar(,gang.tar,,**dot_5**))
+	(gzip(,gang.tar))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(dorito.csug.rochester.edu:/var/mail)
+	(less(/etc,fstab))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(find(,gang,,,**dot_0**))
+	(cd(bin,gang))
+	(ls(,**dot_1**))
+	(tar(,set.tar,,set))
+	(gzip(,set.tar))
+	(cd(../../code,gang))
+	(ls(,**dot_2**))
+	(cd(../../mail/linux,gang))
+	(ls(,**dot_3**))
+	(tar(,intro.tar,,intro))
+	(gzip(,intro.tar))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(40000)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+	(ls(,mickey))
+	(cd(,**dotdot_1**))
+	(ls(,code))
+	(ls(code,dwarf))
+	(ls(code/dwarf,gang))
+	(ls(code/dwarf,linux))
+	(ls(code,linux))
+	(rm(code/linux,chapin-research.ps))
+	(ls(code/dwarf/linux,dwarf))
+	(ls(code/linux,dwarf))
+	(ls(code/linux/dwarf,3))
+	(ls(code/linux,true))
+	(ls(,mail))
+	(ls(mail,2))
+	(ls(mail/2,gang))
+	(ls(mail,gang))
+	(rm(mail/gang,aslisp1.ps))
+	(ls(mail/gang,intro))
+	(ls(mail/gang,set))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(cd(mail,dwarf))
+	(touch(,joe.txt))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Feb21)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(bin,gang))
+	(ls(bin/gang,dwarf))
+	(ls(bin/gang/dwarf,gang))
+	(ls(bin,mickey))
+	(ls(,code))
+	(ls(code,true))
+	(ls(,mail))
+	(ls(mail,2))
+	(ls(mail/2,dwarf))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(find(,pl,,,**dot_0**))
+	(rm(bin/dwarf,convert.pl))
+	(rm(bin/dwarf/2,constructor.pl))
+	(rm(bin/dwarf/2/true,aml.pl))
+	(rm(code,accessor.pl))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,linux)
+	(find(,pl,,,**dot_0**))
+	(mv(mail,linux,bin/intro/gang,convert.pl),mv(mail,linux,code/dwarf,constructor.pl),mv(mail,linux,code/set,accessor.pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(find(,b.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(bin,3))
+	(ls(bin/3,2))
+	(ls(bin/3/2,gang))
+	(ls(bin/3,gang))
+	(ls(,code))
+	(ls(code,intro))
+	(find(,linux,,,**dot_0**))
+	(mv(mail/dwarf/gang,linux,code/intro,5.5.aux))
+	(ls(code,true))
+	(ls(code/true,set))
+	(ls(,mail))
+	(ls(mail,dwarf))
+	(ls(mail/dwarf,dwarf))
+	(ls(mail/dwarf,gan))
+	(ls(mail/dwarf,gang))
+	(ls(mail/dwarf/gang,linux))
+	(ls(mail/dwarf,mickey))
+	(mv(mail/dwarf/gang,linux,mail/dwarf/mickey,capture.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(find(,aml,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(code/set,linux,code/gang/gang,aml))
+	(mv(code/set,linux,mail/3,aml))
+
+,
+*******************************************
+Goal: create-dir(s2,linux)
+	(find(,linux,,,**dot_0**))
+	(cd(bin/gang,linux))
+	(mkdir(,s2))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Mar21)
+	(ls(,**dot_0**))
+	(ls(,bin))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(find(,2,,,**dot_0**))
+	(cd(mail,2))
+	(ls(,**dot_1**))
+	(tar(,mickey.tar,,mickey))
+	(gzip(,mickey.tar))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(bin,2))
+	(ls(bin/2,mickey))
+	(ls(bin,3))
+	(ls(bin,dwarf))
+	(ls(bin/dwarf,intro))
+	(ls(bin/dwarf,set))
+	(ls(bin,gang))
+	(ls(bin/gang,dwarf))
+	(find(,linux,,,**dot_0**))
+	(mv(code,linux,bin/gang/dwarf,5))
+	(ls(bin/gang/dwarf,gang))
+	(ls(bin/gang/dwarf/gang,gang))
+	(ls(,code))
+	(ls(,linux))
+	(ls(code,linux))
+	(ls(,mail))
+	(mv(code,linux,,capture.txt))
+	(mv(code,linux,mail,capture.txt))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,,**dot_0**))
+	(du(mail,rl.exe))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(find(,gang,,,**dot_0**))
+	(cd(bin/dwarf,gang))
+	(ls(,**dot_1**))
+	(cd(../../../code/dwarf,gang))
+	(ls(,**dot_2**))
+	(cd(../../../mail/set,gang))
+	(ls(,**dot_3**))
+	(tar(,true.tar,,true))
+	(gzip(,true.tar))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,linux,,,**dot_0**))
+	(touch(code/dwarf/linux,bob.bob))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(find(,eps,,,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(mv(bin/intro,dwarf,code/gang,agent.eps))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(dorito.csug.rochester.edu:/var/mail)
+	(cat(/etc,fstab))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(find(,eps,,,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(mv(bin/intro,dwarf,code/gang,agent.eps))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(maputo)
+	(ruptime())
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(ls(./bin/dwarf,gang))
+	(compress(./bin/dwarf/gang,dwarf))
+	(compress(./bin,dwarf))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(gang)
+	(find(,gang,,,**dot_0**))
+	(compress(./bin/gang,**dot_0**))
+	(compress(./mail/gang,**dot_0**))
+	(uncompress(./mail/gang,**dot_0**))
+	(compress(./mail/gang/gang,**dot_0**))
+	(compress(./mail/gang,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(find(,b.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(./code/true/dwarf,joe.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,linux)
+	(find(,eps,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(./bin,linux,./code,agent.eps))
+	(find(,eps,,,**dot_0**),find(,eps,,,print))
+	(find(,eps,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,gang)
+	(find(,aml,,,**dot_0**))
+	(find(,gang,,,**dot_0**))
+	(mv(./bin,gang,./bin/dwarf/true,aml.pl))
+	(mv(./bin,gang,./code,aml.config))
+	(ls(./bin,gang))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,linux)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(cd(mail/gang/gang,linux))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(pwd())
+	(cd(**dotdot_3**,**dotdot_3**))
+	(ls(,**dot_4**))
+	(find(,,38400,,**dot_4**))
+	(find(,,38400,,**dot_4**))
+	(find(,,75,,**dot_4**))
+	(find(,linux,,,**dot_4**))
+	(mv(./mail/gang/gang,linux,./bin/dwarf,capture.txt),mv(./mail/gang/gang,linux,./mail/set,5.5.aux))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(find(,,50,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(./code,linux,./code/mickey/2/intro,5.5.aux),mv(./code,linux,./code/mickey/gang,capture.txt))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(slate.cs.rochester.edu:/var/mail)
+	(df(/var,mail))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(find(,,75,,**dot_0**))
+	(ln(./code,dwarf,./bin/mickey/dwarf,5.5.aux),ln(./code,dwarf,./code/gang,capture.txt))
+	(mv(./bin/mickey,dwarf,./bin/mickey/dwarf,5.5.aux),mv(./bin/mickey,dwarf,./code/gang,capture.txt))
+	(find(,dwarf,,,**dot_0**))
+	(find(,,75,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(ls(,ps14.txt))
+	(find(,ps14.txt,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(ls(,**dot_0**))
+	(ls(code/true,aslisp1.ps))
+	(ls(code,blaylock.jpg))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,linux)
+	(find(,linux,,,**dot_0**))
+	(find(,pl,,,**dot_0**))
+	(mv(./mail/2/dwarf,linux,./mail,accessor.pl),mv(./mail/2/dwarf,linux,./mail/gang,convert.pl),mv(./mail/2/dwarf,linux,./mail/3,aml.pl),mv(./mail/2/dwarf,linux,./mail/2,constructor.pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(find(,b.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(maputo)
+	(ping(maputo,))
+	(ruptime())
+	(rsh(maputo,uptime))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(find(,2,,,**dot_0**))
+	(cd(bin/linux,2))
+	(ls(,**dot_1**))
+	(du(,**dot_1**))
+	(gtar(,3.tgz,,3))
+	(rm(,3))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(50000)
+	(find(,,50000,,**dot_0**))
+	(rm(./code/gang,chapin-research.ps),rm(./mail,aslisp1.ps))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(find(,,50,,**dot_0**))
+	(mv(./mail,dwarf,./code/set/intro/2/gang,5.5.aux),mv(./mail,dwarf,./mail,capture.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,gang)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(,code))
+	(ls(,mail))
+	(cd(,bin))
+	(mv(,gang,,aml))
+	(ls(,**dot_1**))
+	(ls(,**dotdot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(ls(,mail))
+	(ls(,code))
+	(cd(,code))
+	(ls(,**dot_3**))
+	(mv(,gang,,aml))
+	(ls(,**dot_3**))
+	(cd(**dotdot_3**,mai))
+	(cd(**dotdot_4**,mail))
+	(ls(,**dot_5**))
+	(ls(,**dot_5**))
+	(ls(,**dotdot_5**))
+	(ls(**dotdot_5**,bin))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(find(,dwarf,,,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(ls(,arf))
+	(ls(,dwarf))
+	(ls(,true))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(ls(,bin))
+	(cd(,code))
+	(ls(,**dot_3**))
+	(ls(,dwarf))
+	(ls(,true))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(ls(,mail))
+	(ls(,bin))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(canberra)
+	(ping(canberra,))
+
+,
+*******************************************
+Goal: create-dir(s2,gang)
+	(find(,,,,**dot_0**),find(,,,,name),find(,,,,gang))
+	(cd(bin,gang))
+	(mkdir(,s2))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,dwarf)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(,code))
+	(ls(,mail))
+	(ls(mail,linux))
+	(ls(mail/lix,intro))
+	(ls(mail/linux,intro))
+	(ls(,bin))
+	(ls(bin,dwarf))
+	(ls(bin/dwarf,dwarf))
+	(ls(bin/dwarf,gang))
+	(ls(,**dot_0**))
+	(ls(,code))
+	(ls(code,gang))
+	(ls(code,set))
+	(mv(bin,dwarf,code/set,convert.pl))
+	(ls(bin,dwarf))
+	(ls(code,set))
+	(ls(code/set,gang))
+	(ls(code/set/gang,true))
+	(ls(,code))
+	(ls(code,set))
+	(ls(,bin))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,gang)
+	(ls(,**dot_0**))
+	(find(,,,,**dot_0**))
+	(cd(mail,gang))
+	(mkdir(,my_thesis.txt))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(find(,,,,**dot_0**))
+	(cd(bin,2))
+	(tar(,gang.tar,gang,**dot_1**))
+	(gzip(,gang.tar))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,,,,**dot_0**))
+	(find(,,,,**dot_0**))
+	(grep(libtool,,foo))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(find(,,,,**dot_0**))
+	(find(,,,,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(,bin))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(ls(,bin))
+	(ls(,**dot_0**))
+	(ls(,code))
+	(ls(,mail))
+	(mv(mail,dwarf,mail,5.5.aux))
+	(ls(bin,linux))
+	(ls(bin/linux,3))
+	(ls(code,2))
+	(ls(code/2/gang,mickey))
+	(ls(code/2,gang))
+	(ls(code/2/gang,sest))
+	(ls(code/2/gang,set))
+	(ls(code/2,mickey))
+	(ls(code,dwarf))
+	(ls(code,gang))
+	(ls(code,intro))
+	(ls(mail,dwarf))
+	(ls(mail/dwarf,gang))
+	(ls(mail/dwarf,true))
+	(mv(mail,dwarf,mail/dwarf/true,capture.txt))
+
+,
+*******************************************
+Goal: create-dir(egg_salad.exe,2)
+	(find(,2,,,**dot_0**))
+	(mkdir(bin/2,egg_salad.exe))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(gang)
+	(find(,gang,,,**dot_0**))
+	(tar(,bin_dwarf_gang.tar.gz,bin/dwarf,gang))
+	(tar(,mail_linux_gang.tar.gz,mail/linux,gang))
+	(tar(,mail_linux_gang_gang.tar.gz,mail/linux/gang,gang))
+	(ls(,*tar.gz))
+
+,
+*******************************************
+Goal: copy-files-by-attr-size-lt(100,linux)
+	(find(,,100,,**dot_0**))
+	(find(,,1,,**dot_0**))
+	(cp(mail,linux,mail/dwarf/mickey,d.c),cp(mail,linux,mail/dwarf/gang/3,capture.txt),cp(mail,linux,mail/dwarf/gang,c.c),cp(mail,linux,mail/dwarf/gang,cas.c),cp(mail,linux,mail,5.5.aux),cp(mail,linux,code/dwarf/2/gang,a.c),cp(mail,linux,code/dwarf/2/gang,b.c),cp(mail,linux,code/dwarf/true,greq.ggd))
+	(cp(mail,linux,code/dwarf/2,b.c))
+	(ls(mail,linux))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(mickey)
+	(find(,mickey,,,**dot_0**))
+	(tar(,mail_dwarf_mickey.tar.gz,mail/dwarf,mickey))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(/home/vax1,u))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(find(,gang,,,**dot_0**))
+	(tar(,bin_gang.tar.gz,bin,gang))
+	(tar(,bin_gang_gang.tar.gz,bin/gang,gang))
+	(tar(,mail_dwarf_gang.tar.gz,mail/dwarf,gang))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(50000)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(bin,2))
+	(ls(bin/2,linux))
+	(ls(bin,dwarf))
+	(ls(bin/dwarf,3))
+	(ls(bin/dwarf,set))
+	(ls(/bin,gang))
+	(ls(bin,gang))
+	(ls(bin/gang,gang))
+	(ls(bin/gang,true))
+	(rm(bin/gang/true,aslisp1.ps))
+	(ls(bin,intro))
+	(ls(bin/intro,gang))
+	(ls(,code))
+	(ls(code,mickey))
+	(ls(,mail))
+	(ls(mail,dwarf))
+	(rm(mail/dwarf,chapin-research.ps))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(40000)
+	(find(,,40960,,**dot_0**))
+	(rm(mail/dwarf/gang/2/3,cycle.tiff))
+	(rm(mail/intro/dwarf,aslisp1.ps))
+	(rm(mail/intro/dwarf,chapin-research.ps))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(bin/true/dwarf,joe.txt))
+
+,
+*******************************************
+Goal: copy-files-by-attr-size-lt(50,linux)
+	(find(,,50,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(cp(bin,linux,bin/linux,5.5.aux),cp(bin,linux,mail/gang/set,capture.txt))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(find(,ps14.txt,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(mail/dwarf,joe.txt))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(tar(,mail_dwarf.tar.gz,mail,dwarf))
+	(tar(,mail_dwarf_dwarf.tar.gz,mail,dwarf))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,*5.5,,,**dot_0**))
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-free(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(/home/vax1,u))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(find(,aml,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(code/set,linux,mail/dwarf,aml.pl),mv(code/set,linux,mail/dwarf/2/intro,aml.config))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(canberra)
+	(ping(canberra,))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(touch(dwarf,bob.bob))
+	(dir(,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(touch(mail/mickey/dwarf,bob.bob))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,linux,,,**dot_0**))
+	(touch(code/gang/linux,bob.bob))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(ls(,**dot_0**))
+	(find(,dll,,,**dot_0**))
+	(ls(./mail/dwarf,pgeasy.dll))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,linux)
+	(ls(,**dot_0**))
+	(find(,pl,,,**dot_0**))
+	(mv(mail/linux,**dot_0**,bin,pl))
+	(mv(mail/linux,**dot_0**,bin/gang,pl))
+	(mv(mail/linux,**dot_0**,bin/gang/dwarf/dwarf,constructor.pl))
+	(mv(mail/linux,**dot_0**,mail/linux/set,pl))
+	(find(,pl,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(ls(,**dot_0**))
+	(du(vax1.cs.rochester.edu:/home/vax1,u))
+	(man(rsh))
+	(cd(/home/vax1,u))
+	(df(,**dot_1**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(ls(,**dot_0**))
+	(find(,**dot_0**,,,**dot_0**))
+	(find(,**dot_0**,,,**dot_0**))
+	(find(,**dot_0**,,,**dot_0**))
+	(mv(/bin/dwarf,**dot_0**,/mail/linux/gang,5.5.aux))
+	(mv(bin/dwarf,**dot_0**,mail/linux/gang,5.5.aux))
+	(mv(bin/dwarf,**dot_0**,bin/dwarf/dwarf,capture.txt))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(find(,pl,,,**dot_0**))
+	(rm(,pl))
+	(find(,pl,,,**dot_0**))
+	(rm(bin/linux,convert.pl))
+	(rm(bin/linux/dwarf/3,aml.pl))
+	(rm(mail/gang/gang,accessor.pl))
+	(rm(mail/gang/gang/dwarf,constructor.pl))
+	(find(,**dot_0**,,,**dot_0**))
+	(find(,pl,,,**dot_0**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(ls(,**dot_0**))
+	(find(,gang,,,**dot_0**))
+	(find(,5.5,,,**dot_0**))
+	(mv(bin/gang,**dot_0**,bin/gang/gang,5.5.dvi))
+	(mv(bin/gang,**dot_0**,mail/linux,5.5.ps))
+	(mv(bin/gang,**dot_0**,mail/linux,5.5.aux))
+	(mv(bin/gang,**dot_0**,mail/set/dwarf,5.5.tex))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(slate.cs.rochester.edu:/var/mail)
+	(man(df))
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(,**dot_0**))
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(find(,aml,,,**dot_0**))
+	(find(,aml,,,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(find(,linux,,,**dot_2**))
+	(mv(./bin/2,linux,./bin/2,aml.pl))
+	(mv(./bin/2,linux,./bin/2,aml.config))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(find(,ps,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(./bin,linu,./bin,chapin-research.ps))
+	(mv(./bin,linux,./bin/2,aslisp1.ps))
+	(mv(./bin,linux,./code,5.5.ps))
+	(mv(./bin/linux,chapin-research.ps,./bin,linu))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(cd(bin,dwarf))
+	(ls(,**dot_1**))
+	(touch(,bob.bob))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,ckey))
+	(cd(,mickey))
+	(ls(,**dot_3**))
+	(cd(,set))
+	(ls(,**dot_4**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,linux)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(mv(mail/2,linux,code/dwarf/gang/gang,capture.txt))
+	(mv(mail/2,linux,mail,5.5.aux))
+	(ls(mail/2,linux))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,dwarf)
+	(ls(,**dot_0**))
+	(mv(code,dwarf,mail,a))
+	(mv(code,dwarf,/mail/gang,pl))
+	(mv(code,dwarf,mail/gang,pl))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,linux)
+	(ls(,eps))
+	(ls(,**dot_0**))
+	(mv(code,linux,bin/dwarf/intro,eps))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(mickey)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(man(gzip))
+	(man(gzip))
+	(gzip(,help))
+	(man(tar))
+	(ls(,**dot_2**))
+	(gzip(,mickey))
+	(gzip(,mickey))
+	(ls(,**dot_2**))
+	(tar(,mickey,,mickey))
+	(zip(,mickey,,mickey))
+	(ls(,**dot_2**))
+	(cd(,gang))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(cd(,**dotdot_4**))
+	(ls(,**dot_5**))
+	(cd(,true))
+	(ls(,**dot_6**))
+	(cd(,gang))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(cd(,**dotdot_8**))
+	(ls(,**dot_9**))
+	(cd(,3))
+	(ls(,**dot_10**))
+	(cd(,**dotdot_10**))
+	(cd(,**dotdot_11**))
+	(ls(,**dot_12**))
+	(cd(,mail))
+	(ls(,**dot_13**))
+	(cd(,**dotdot_13**))
+	(cd(,bin))
+	(ls(,**dot_15**))
+	(cd(,2))
+	(ls(,**dot_16**))
+	(cd(,linux))
+	(ls(,**dot_17**))
+	(cd(,**dotdot_17**))
+	(cd(,**dotdot_18**))
+	(ls(,**dot_19**))
+	(cd(,set))
+	(ls(,**dot_20**))
+	(cd(,dwarf))
+	(ls(,**dot_21**))
+	(cd(,dwarf))
+	(ls(,**dot_22**))
+	(cd(,**dotdot_22**))
+	(cd(,intro))
+	(ls(,**dot_24**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(cd(,2))
+	(ls(,**dot_4**))
+	(cd(,dwarf))
+	(ls(,**dot_5**))
+	(pico(,**dot_5**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,**dot_0**))
+	(find(,,,,**dot_0**))
+	(cd(,code))
+	(cd(,info))
+	(ls(,**dot_2**))
+	(cd(,intro))
+	(zip(,dwarf,,dwarf))
+	(cd(,**dotdot_3**))
+	(cd(,**dotdot_4**))
+	(cd(,mail))
+	(cd(,dwarf))
+	(ls(,**dot_7**))
+	(cd(,true))
+	(ls(,**dot_8**))
+	(cd(,**dotdot_8**))
+	(cd(,**dotdot_9**))
+	(cd(,mail))
+	(ls(,**dot_11**))
+	(zip(,dwarf,,dwarf))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(dwarf)
+	(find(,,,,**dot_0**))
+	(cd(,code))
+	(cd(,true))
+	(zip(,dwarf,,dwarf))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(,gang))
+	(ls(,**dot_4**))
+	(zip(,dwarf,,dwarf))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,,,,**dot_0**))
+	(cd(,mail))
+	(cd(,gang))
+	(cd(,2))
+	(cd(,linux))
+	(ls(,**dot_4**))
+	(ls(,**dot_4**))
+	(cat(,bob.bob))
+	(man(cat))
+	(pico(,bob.bob))
+	(ls(,**dot_4**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: copy-files-by-attr-name-ext(ps,linux)
+	(find(,,,,**dot_0**))
+	(cp(code,linux,bin,gang*.ps))
+	(cp(code,linux,bin/gang,ps))
+	(cp(code,linux,code/3,ps))
+	(cp(code,linux,code/gang/set,ps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,cod))
+	(ls(,**dot_5**))
+	(cd(,code))
+	(ls(,**dot_6**))
+	(cd(,gang))
+	(ls(,**dot_7**))
+	(ls(,**dot_7**))
+	(ls(,**dot_7**))
+	(tar(,bang1.tar,,dwarf),tar(,bang1.tar,,linux))
+	(ls(,**dot_7**))
+	(gzip(,bang1.tar))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,**dotdot_8**))
+	(ls(,**dot_9**))
+	(cd(,mail))
+	(ls(,**dot_10**))
+	(cd(,**dotdot_10**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(tex)
+	(man(grep))
+	(man(tind))
+	(man(find))
+	(find(,tex,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,gang)
+	(find(,gang,,,**dot_0**))
+	(mkdir(./bin/gang,my_thesis.txt))
+
+,
+*******************************************
+Goal: create-dir(s2,2)
+	(find(,2,,,**dot_0**))
+	(mkdir(bin/3/2,s2))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,dwarf)
+	(man(find))
+	(find(,,059,,**dot_0**))
+	(find(,,59,,**dot_0**))
+	(find(,,50,,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(mv(mail/gang,dwarf,code,5.5.aux))
+	(mv(mail/gang,dwarf,code/mickey/2/true,capture.txt))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(porter)
+	(ping(porter,))
+	(jobs())
+
+,
+*******************************************
+Goal: copy-files-by-attr-size-lt(50,linux)
+	(find(,,50,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(code,linux,bin,5.5.aux))
+	(mv(code,linux,code/linux/gang,capture.txt))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,2)
+	(find(,2,,,**dot_0**))
+	(mkdir(code/2,my_thesis.txt))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Feb21)
+	(man(find))
+	(find(,,,,**dot_0**))
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(find(,ps,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(bin,linux,bin/linux,ps))
+	(mv(bin,linux,bin/dwarf,ps))
+	(mv(bin,linux,code/gang/true/dwarf,ps))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(porter)
+	(ping(porter,))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,dwarf)
+	(ls(,**dot_0**))
+	(mv(,dwarf,*/*,pl))
+	(mv(mail,dwarf,*/*,pl))
+	(find(,pl,,,**dot_0**))
+	(mv(mail,dwarf,code,pl))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(/home/vax1,u))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(find(,ps,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(bin/gang/dwarf,linux,bin/2/intro,ps))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(du(./mail/set,pgeasy.dll))
+	(ls(./mail/set,pgeasy.dll))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(find(,gang,,,**dot_0**))
+	(ls(,code),ls(,gang))
+	(ls(,mail),ls(,gang))
+	(find(,5.5,,,**dot_0**))
+	(mv(code,gang,bin,5.5))
+	(mv(code,gang,mail/*,5.5))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,2))
+	(ls(,**dot_2**))
+	(cd(,gang))
+	(ls(,**dot_3**))
+	(cd(../..,3))
+	(ls(,**dot_4**))
+	(cd(**dotdot_4**,**dotdot_4**))
+	(ls(,**dot_5**))
+	(cd(,mail))
+	(ls(,**dot_6**))
+	(cd(,dwarf))
+	(ls(,**dot_7**))
+	(cd(,gang))
+	(ls(,**dot_8**))
+	(cd(,**dotdot_8**))
+	(cd(,true))
+	(ls(,**dot_10**))
+	(cd(,**dotdot_10**))
+	(pwd())
+	(cd(,**dotdot_11**))
+	(cd(,**dotdot_12**))
+	(ls(,**dot_13**))
+	(ls(,**dot_13**))
+	(ls(,**dot_13**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(ls(,**dot_0**))
+	(cd(./bin,gang))
+	(tar(,gang.tgz,,**dot_1**))
+	(tar(,gang.tgz,,**dot_1**))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+	(pwd())
+	(cd(**dotdot_1**,**dotdot_1**))
+	(ls(,**dot_2**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(ls(,**dot_0**))
+	(mv(**dot_0**,linux,./code,aml.pl))
+	(mv(,linux,./code/3,aml.config))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(rm(,pl))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(rm(,pl))
+	(ls(,**dot_1**))
+	(cd(,3))
+	(rm(,pl))
+	(cd(**dotdot_2**,intro))
+	(rm(,pl))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(rm(./3/linux,pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: create-dir(egg_salad.exe,2)
+	(ls(,**dot_0**))
+	(mkdir(./bin/gang/2,egg_salad.exe))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(ls(,**dot_0**))
+	(mv(./mail/set,dwarf,./mail/set/true,ps))
+	(mv(./mail/set,dwarf,./mail/mickey,ps))
+	(mv(./mail/set,dwarf,./mail/3,ps))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(ls(,**dot_0**))
+	(tar(,2.tgz,./bin/gang,2))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(ls(,**dot_0**))
+	(cd(mail,linux))
+	(touch(,bob.bob))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,linux)
+	(ls(,**dot_0**))
+	(mkdir(./bin/2/gang/linux,my_thesis.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,linux)
+	(ls(,**dot_0**))
+	(mv(./bin,linux,./bin,eps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(ps)
+	(ls(,**dot_0**))
+	(rm(./mail/linux,ps))
+	(rm(./code/intro,ps))
+	(rm(./code/2,ps))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(mv(./code/mickey,dwarf,/mail,cture.txt))
+	(mv(./code/mickey,dwarf,./mail,capture.txt))
+	(mv(./code/mickey,dwarf,./bin/2,5.5.aux))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(ls(,**dot_0**))
+	(grep(dwaf,,tmp))
+	(grep(dwarf,,tmp))
+	(touch(./code/dwarf,bob.bob))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,linux)
+	(find(,,38400,,**dot_0**))
+	(cat(,find.tmp))
+	(ls(**dot_0**,mail))
+	(find(,,38400,,**dot_0**))
+	(find(,,38400,,**dot_0**))
+	(find(,,38400,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(find(,,75,,**dot_0**))
+	(mv(./code,linux,./bin/intro/2/gang,capture.txt),mv(./code,linux,./code/true/gang/3,5.5.aux))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,2)
+	(find(,2,,,**dot_0**))
+	(mkdir(./bin/2,my_thesis.txt))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(tar(,dwarf.tar,./bin,dwarf))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,linux)
+	(find(,5.5,,,**dot_0**))
+	(find(,5.5,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(./code/true/gang,linux,./bin,5.5.tex))
+	(mv(./code/true/gang,linux,./bin/dwarf/gang,5.5.aux))
+	(mv(./code/true/gang,linux,./code/gang,5.5.dvi))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(ls(,**dot_0**))
+	(grep(lsout,,pgeasy.dll))
+	(grep(pgeasy.dll,,lsout))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(50000)
+	(find(,,50000,,**dot_0**))
+	(rm(./code,aslisp1.ps))
+	(rm(./mail/2/true,chapin-research.ps))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(find(,pl,,,**dot_0**))
+	(rm(./bin,accessor.pl))
+	(rm(./bin/set/dwarf/true,convert.pl))
+	(rm(./mail,constructor.pl))
+	(rm(./mail,aml.pl))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(man(find))
+	(find(,rl.exe,,,**dot_0**))
+	(find(,rl.exe,,,**dot_0**))
+	(find(,rl.exe,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(find(,rl.exe,,,**dot_0**))
+	(find(,,75,,**dot_0**))
+	(cat(,findout))
+	(find(,dwarf,,,**dot_0**))
+	(cat(,findout))
+	(mv(./code,dwarf,./bin/intro,5.5.aux),mv(./code,dwarf,./bin/intro/2,capture.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(find(,,38400,,**dot_0**))
+	(find(,,75,,**dot_0**))
+	(mv(./bin,dwarf,./mail,capture.txt),mv(./bin,dwarf,./bin/dwarf/2,5.5.aux))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,linux)
+	(find(,linux,,,**dot_0**))
+	(find(,pl,,,**dot_0**))
+	(mv(./code,linux,./bin/gang/set,convert.pl),mv(./code,linux,./code,accessor.pl),mv(./code,linux,./code,constructor.pl),mv(./code,linux,./code/gang/dwarf,aml.pl))
+
+,
+*******************************************
+Goal: create-dir(egg_salad.exe,linux)
+	(find(,linux,,,**dot_0**))
+	(mkdir(./bin/gang/linux,egg_salad.exe))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(find(,eps,,,**dot_0**))
+	(mv(./bin,dwarf,./code,agent.eps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(find(,gang,,,**dot_0**))
+	(find(,5.5,,,**dot_0**))
+	(mv(./bin,gang,./bin/gang,5.5.ps),mv(./bin,gang,./code,5.5.tex),mv(./bin,gang,./code/dwarf/intro,5.5.aux),mv(./bin,gang,./code/dwarf/2/mickey,5.5.dvi))
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,gang)
+	(find(,gang,,,**dot_0**))
+	(find(,aml,,,**dot_0**))
+	(mv(./bin,gang,./bin/set,aml.pl),mv(./bin,gang,./mail/gang/2/intro,aml.config))
+
+,
+*******************************************
+Goal: create-file(joe.txt,linux)
+	(find(,linux,,,**dot_0**))
+	(touch(./mail/2/linux,joe.txt))
+
+,
+*******************************************
+Goal: create-file(joe.txt,linux)
+	(find(,linux,,,**dot_0**))
+	(mkdir(./bin/dwarf/dwarf/linux,joe.txt))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(./bin/mickey/dwarf,bob.bob))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,linux,,,**dot_0**))
+	(touch(./mail/gang/linux,bob.bob))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,linux)
+	(find(,eps,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(./bin/gang,linux,./code/set/2/mickey,agent.eps))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(./bin/dwarf,bob.bob))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Feb21)
+	(man(find))
+	(find(,,,,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(grep(Feb 21,,lsout))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(ls(,**dot_0**))
+	(grep(Jan 21,,lsout))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(ls(,**dot_0**))
+	(grep(rl.exe,,lsout))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,linux)
+	(find(,pl,,,**dot_0**))
+	(find(,pl,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(./mail/dwarf,linux,./bin/gang/mickey,convert.pl),mv(./mail/dwarf,linux,./code/dwarf/set,aml.pl),mv(./mail/dwarf,linux,./mail,accessor.pl),mv(./mail/dwarf,linux,./mail/dwarf,constructor.pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(find(,pl,,,**dot_0**))
+	(rm(./bin/2,constructor.pl),rm(./bin/linux/dwarf,aml.pl),rm(./mail/gang,convert.pl),rm(./mail/intro,accessor.pl))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(50000)
+	(find(,,50000,,**dot_0**))
+	(rm(./bin/linux,chapin-research.ps),rm(./mail/2,aslisp1.ps))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(nye)
+	(ping(nye,))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(ls(,**dot_0**))
+	(pwd())
+	(find(,5.5,,,**dot_0**))
+	(find(,gang,,,**dot_0**))
+	(mv(./mail/set,gang,./bin/mickey,5.5.tex))
+	(mv(./mail/set,gang,./bin/mickey,5.5.ps))
+	(mv(./mail/set,gang,./mail/set/dwarf,5.5.aux))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(ls(,**dot_0**))
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(tex)
+	(find(,tex,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(ls(,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(cd(./mail/2,linux))
+	(touch(,bob.bob))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(cd(./mail/gang,dwarf))
+	(touch(,bob.bob))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,dwarf)
+	(find(,pl,,,**dot_0**))
+	(find(,,,,dwarf))
+	(find(,dwarf,,,**dot_0**))
+	(mv(./mail/2,dwarf,./code,aml.pl))
+	(mv(./mail/2,dwarf,./code/3,constructor.pl))
+	(mv(./mail/2,dwarf,./mail,convert.pl))
+	(mv(./mail/2,dwarf,./mail/mickey,accessor.pl))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(find(,5.5,,,**dot_0**))
+	(find(,gang,,,**dot_0**))
+	(mv(./mail/3,gang,./code/gang,5.5.tex))
+	(mv(./mail/3,gang,./mail,5.5.dvi))
+	(mv(./mail/3,gang,./mail/3,5.5.ps))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(hoover.csug.rochester.edu:/u)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,dwarf)
+	(man(find))
+	(find(,,50,,**dot_0**))
+	(ls(,**dot_0**))
+	(find(,,50,,**dot_0**))
+	(ls(./code/true,5.5.aux),ls(./mail/2/gang,capture.txt))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(mail/dwarf,joe.txt))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(code/dwarf,joe.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(find(,ps,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(./bin/3/2,linux,./bin,aslisp1.ps),mv(./bin/3/2,linux,./bin/dwarf,chapin-research.ps),mv(./bin/3/2,linux,./mail/set,5.5.ps))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(mickey)
+	(find(,mickey,,,**dot_0**))
+	(cd(bin,dwarf))
+	(ls(,mickey))
+	(ls(,mickey))
+	(tar(,mickey.tar.gz,,mickey))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(mickey)
+	(find(,mickey,,,**dot_0**))
+	(ls(bin/gang,mickey))
+	(tar(,mickey.tar.gz,bin/gang,mickey))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(find(,gang,,,**dot_0**))
+	(ls(code,gang))
+	(ls(mail,gang))
+	(ls(mail/intro,gang))
+	(cd(mail,gang))
+	(tar(,3.tar.gz,,3))
+	(tar(,dwarf.tar.gz,,dwarf))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(ls(code/dwarf,pgeasy.dll))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(find(,aml,,,**dot_0**))
+	(find(,aml,,,**dot_0**))
+	(mv(,linux,./code,aml.config),mv(,linux,./code/gang/true/linux,aml.pl))
+	(find(,linux,,,**dot_0**))
+	(mv(./code/gang/true,linux,./code,aml.config),mv(./code/gang/true,linux,./code/gang/true/linux,aml.pl))
+	(mv(./code/gang/true,linux,./code,aml.config))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(find(,,75,,**dot_0**))
+	(ls(./code/gang/2/intro,5.5.aux),ls(./code/linux/true/3,capture.txt))
+	(find(,dwarf,,,**dot_0**))
+	(file(code,dwarf))
+	(mv(code,dwarf,./code/gang/2/intro,5.5.aux),mv(code,dwarf,./code/linux/true/3,capture.txt))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,,**dot_0**))
+	(ls(,!))
+	(ls(bin/2,rl.exe))
+	(du(bin/2,rl.exe))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(find(,2,,,**dot_0**))
+	(cd(,mail))
+	(ls(,2))
+	(tar(,2.tar.gz,,2))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,linux)
+	(find(,linux,,,**dot_0**))
+	(find(,,75,,**dot_0**))
+	(mv(./bin/dwarf,linux,./bin/dwarf,5.5.aux))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Feb21)
+	(ls(,**dot_0**))
+	(ls(,bin))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(mv(,dwarf,,eps))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(tar(,dwarf.tar,,dwarf))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,2)
+	(cd(,2))
+	(dir(,**dot_1**))
+	(cd(,bin))
+	(dir(,**dot_2**))
+	(dir(,**dot_2**))
+	(cd(,gang))
+	(dir(,**dot_3**))
+	(dir(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(cd(,**dotdot_4**))
+	(dir(,**dot_5**))
+	(cd(,code))
+	(dir(,**dot_6**))
+	(cd(,2))
+	(mkdir(,my_thesis.txt))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(dir(,**dot_0**))
+	(cd(,bin))
+	(dir(,-))
+	(dir(,**dot_1**))
+	(dir(,**dot_1**))
+	(cd(,set))
+	(dir(,**dot_2**))
+	(cd(,gang))
+	(dir(,**dot_3**))
+	(man(gzip))
+	(dir(,**dot_3**))
+	(gzip(,**dot_3**))
+	(dir(,**dot_3**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,,,,rl.exe))
+	(man(find))
+	(find(,,,,**dot_0**))
+	(cd(,code))
+	(cd(,true))
+	(dir(,**dot_2**))
+	(dir(,**dot_2**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(find(,5.5,,,**dot_0**))
+	(find(,gang,,,**dot_0**))
+	(mv(./bin/gang,gang,./code,5.5.ps))
+	(mv(./bin/gang,gang,./code,5.5.dvi))
+	(mv(./bin/gang,gang,./mail/dwarf/set,5.5.tex))
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(40000)
+	(ls(,**dot_0**))
+	(ls(*,**dot_0**))
+	(find(,,,,**dot_0**))
+	(rm(./bin/dwarf/chapin-research.ps./code/linux,aslisp1.ps),rm(./mail/2,cycle.tiff))
+	(rm(./bin/dwarf,chapin-research.ps),rm(./code/linux,aslisp1.ps))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,linux,,,**dot_0**))
+	(touch(./mail/linux,bob.bob))
+	(ls(./mail/linux,bob.bob))
+
+,
+*******************************************
+Goal: know-filespace-free(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-free(slate.cs.rochester.edu:/var/mail)
+	(df(/var,mail))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-dir(egg_salad.exe,gang)
+	(find(,gang,,,**dot_0**))
+	(mkdir(./code/gang,egg_salad.exe))
+	(ls(./code/gang,egg_salad.exe))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(find(,gang,,,**dot_0**))
+	(tar(,gang.tar.gz,./code/gang,**dot_0**),tar(,gang.tar.gz,./code/gang/gang,**dot_0**),tar(,gang.tar.gz,./mail/true/gang,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(find(,2,,,**dot_0**))
+	(ls(./code,2))
+	(tar(,mickey.tar.gz,./code/2,mickey))
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(,code))
+	(ls(,mail))
+	(mv(mail,linux,mail,capture.txt))
+	(cd(,code))
+	(ls(,dwarf))
+	(ls(dwarf,gang))
+	(ls(,**dot_1**))
+	(ls(,mickey))
+	(ls(mickey,3))
+	(cd(**dotdot_1**,mail))
+	(ls(,**dot_2**))
+	(ls(,dwarf))
+	(ls(dwarf,gang))
+	(ls(,gang))
+	(ls(gang,2))
+	(ls(gang,intro))
+	(mv(,linux,gang/intro,5.5.aux))
+	(ls(gang/2,true))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(ls(,set))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,3))
+	(ls(,**dot_2**))
+	(cd(**dotdot_2**,true))
+	(ls(,**dot_3**))
+	(cd(,dwarf))
+	(ls(,**dot_4**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(,code))
+	(ls(,mail))
+	(ls(bin,3))
+	(ls(bin/3,linux))
+	(ls(bin,gang))
+	(cd(bin/gang,dwarf))
+	(echo(i),echo(am),echo(bob))
+	(echo(i),echo(am),echo(bob))
+	(ls(,**dot_1**))
+	(more(,bob.bob))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,mickey))
+	(ls(,**dot_2**))
+	(ls(,dwarf))
+	(ls(dwarf,gang))
+	(cd(dwarf,gang))
+	(ls(,**dot_3**))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Feb21)
+	(ls(,**dot_0**))
+	(ls(,code))
+	(ls(,code))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(cd(,bin))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,code))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,mail))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(ls(,**dot_8**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(mickey)
+	(compress(,mickey))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(cd(,3))
+	(ls(,**dot_2**))
+	(compress(,mickey))
+	(ls(,**dot_2**))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(ls(,**dot_0**))
+	(cd(bin/intro,2))
+	(ls(,**dot_1**))
+	(mv(../../../bin/dwarf/gang,linux,,aml.pl))
+	(cd(../..,**dotdot_1**))
+	(ls(,**dot_2**))
+	(cd(,code))
+	(ls(,**dot_3**))
+	(mv(../bin/dwarf/gang,linus,,aml.config))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(ls(,**dot_0**))
+	(cd(code/gang,dwarf))
+	(pico(,bob.bob))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(ls(,**dot_0**))
+	(find(,a.c,,,**dot_0**))
+	(find(,a.c,,,**dot_0**))
+	(cd(bin,set))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(ls(,**dot_0**))
+	(ls(,mail))
+	(ls(,code))
+	(ls(,bin))
+	(ls(,bin))
+	(ls(bin,linux))
+	(ls(code,**dot_0**))
+	(ls(code/*,**dot_0**))
+	(mv(bin,linux,code,cture.txt))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(ls(../bin,linux))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(ls(,code))
+	(ls(,mail))
+	(ls(code/*,**dot_2**))
+	(mv(bin/linux,**dot_2**,code/gang,capture.txt))
+	(mv(bin,linux,code/gang/intro,5.5.aux))
+	(ls(code/gang,2))
+	(ls(,**dot_2**))
+	(ls(mail,**dot_2**))
+	(ls(mail,**dot_2**))
+	(ls(mail/*,**dot_2**))
+
+,
+*******************************************
+Goal: create-file(joe.txt,linux)
+	(touch(,joe.txt))
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(ls(,**dot_0**))
+	(fgrep(libtool,,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(cd(,code))
+	(ls(,**dot_3**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(fgrep(5.5,,**dot_0**))
+	(cd(code,dwarf))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(cd(,code))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,mail))
+	(ls(,**dot_5**))
+	(cp(~,dwarf,,aslisp1.ps))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(ls(,**dot_0**))
+	(fgrep(linux,,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,1))
+	(cd(,2))
+	(ls(,**dot_3**))
+	(cd(,linux))
+	(touch(,bob.bob))
+	(ls(,**dot_4**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(fgrep(README,,**dot_0**))
+	(cd(bin,gang))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: create-dir(s2,linux)
+	(fgrep(linux,,**dot_0**))
+	(grep(linux,,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(cd(,intro))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(cd(,**dotdot_4**))
+	(ls(,**dot_5**))
+	(cd(,**dot_5**))
+	(cd(,tru))
+	(ls(,**dot_7**))
+	(cd(,true))
+	(ls(,**dot_8**))
+	(cd(,dwarf))
+	(ls(,**dot_9**))
+	(cd(,**dotdot_9**))
+	(cd(,**dotdot_10**))
+	(ls(,**dot_11**))
+	(cd(,**dotdot_11**))
+	(ls(,**dot_12**))
+	(cd(,code))
+	(ls(,**dot_13**))
+	(cd(,linux))
+	(ls(,**dot_14**))
+	(mkdir(,s2))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(dorito.csug.rochester.edu:/var/mail)
+	(ls(,**dot_0**))
+	(ruptime())
+	(cd(,dorito.csug.rochester.edu))
+	(ls(,**dot_1**))
+	(cd(,mail))
+	(ls(,**dot_2**))
+	(mount())
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(ls(,**dot_3**))
+	(ls(,**dot_3**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(porter)
+	(ping(porter,))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(tar(bin,dwarf.tar,bin,dward))
+	(tar(bin,dwarf.tar,bin,dwarf))
+	(ls(,**dot_0**))
+	(ls(mail/true,dwarf))
+	(tar(mail/true,dwarf.tar,mail/true,dwarf))
+	(gzip(mail/true,dwarf.tar))
+	(gzip(bin,dwarf.tar))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(du(,ps14.txt))
+	(find(,,,,ps14.txt))
+	(find(,ps14.txt,,,**dot_0**))
+	(du(bin,ps14.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,gang)
+	(find(,aml,,,**dot_0**))
+	(mv(,gang,mail/gang,aml.ps),mv(,gang,mail/gang/set,aml))
+	(ls(,**dot_0**))
+	(find(,gang,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(ps)
+	(find(,ps,,,**dot_0**))
+	(rm(bin/3/2,ps),rm(bin/gang/dwarf,ps),rm(bin/gang/dwarf/gang,ps))
+	(find(,ps,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(tex)
+	(find(,tex,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-free(dorito.csug.rochester.edu:/var/mail)
+	(df(dorito.csug.rochester.edu:/var,mail))
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(find(,b.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,,**dot_0**))
+	(ls(bin/2/intro,rl.exe))
+
+,
+*******************************************
+Goal: know-filespace-free(hoover.csug.rochester.edu:/u)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(porter)
+	(ping(porter,))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(find(,pl,,,**dot_0**))
+	(rm(bin/dwarf/set,pl),rm(bin/gang,pl),rm(code/3,pl),rm(code/3/true,pl))
+	(find(,pl,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(ls(,c))
+	(ls(,**dot_0**))
+	(ls(*,c))
+
+,
+*******************************************
+Goal: know-filespace-free(vax1.cs.rochester.edu:/home/vax1/u)
+	(du(vax1.cs.rochester.edu:/home/vax1,u))
+	(df(vax1.cs.rochester.edu:/home/vax1,u))
+	(du(/home/vax1,u))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(du(/home/vax1,u))
+	(df(/home/vax1,u))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(ls(,code))
+	(ls(*,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(mv(,linux,,ps))
+	(ls(*,**dot_0**))
+	(mv(bin,linux,bin/mail,ps),mv(bin,linux,mail/mickey,ps))
+	(ls(,**dot_0**))
+	(mv(bin,linux,mail,ps))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(ls(,**dot_0**))
+	(ls(*,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,**dot_0**),ls(*,**dot_0**))
+	(ls(code/gang,2))
+	(cd(code,gang))
+	(ls(,dwarf))
+	(compress(,dwarf))
+	(ls(,**dot_1**))
+	(gzip(,dwarf))
+	(tar(,**dot_1**,,dwarf))
+	(gzip(,dwarf.tar))
+	(ls(,**dot_1**))
+	(tar(,**dot_1**,,dwarf.tar),tar(,**dot_1**,,dwarf))
+	(ls(,**dot_1**))
+	(tar(,dwarf.tar,,dwarf))
+	(ls(,**dot_1**))
+	(gzip(,dwarf.tar))
+	(pwd())
+	(cd(**dotdot_1**,2))
+	(cd(,2))
+	(ls(,**dot_3**))
+	(tar(,dwarf.tar,,dwarf))
+	(gzip(,dwarf.tar))
+	(cd(**dotdot_3**,**dotdot_3**))
+	(ls(,**dot_4**))
+	(ls(,3),ls(3,**dot_4**))
+	(cd(,**dotdot_4**))
+	(ls(,**dot_5**))
+	(ls(,**dot_5**),ls(*,s))
+	(ls(*,**dot_5**))
+	(ls(mail/gang,mickey))
+	(ls(bin/linux,intro))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,**dot_0**))
+	(find(,,,,dwarf))
+	(find(,,,,**dot_0**),find(,,,,dwarf))
+	(find(,,,,**dot_0**),find(,,,,dwarf))
+	(egrep(dwarf,,foo))
+	(less(,bar))
+	(egrep(dwarf,,bar))
+	(less(,baz))
+	(tar(,dwarf.tar,,baz))
+
+,
+*******************************************
+Goal: create-dir(s2,2)
+	(find(,,,,**dot_0**),find(,,,,2))
+	(find(,,,,**dot_0**),find(,,,,2))
+	(egrep(2,,foo))
+	(less(,bar))
+	(cd(code,2))
+	(mkdir(,s2))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,linux)
+	(find(,,,,**dot_0**),find(,,,,5.5))
+	(less(,foo))
+	(find(,,,,**dot_0**))
+	(man(find))
+	(find(,,,,**dot_0**),find(,,,,5.5))
+	(find(,,,,**dot_0**),find(,,,,5))
+	(find(,5.5,,,**dot_0**))
+	(find(,5.5,,,**dot_0**))
+	(man(mv))
+	(find(,linux,,,**dot_0**))
+	(less(,foo))
+	(mv(./bin/dwarf,linux,./bin/dwarf,5.5.dvi))
+	(mv(bin/dwarf,linux,./mail,5.5.ps))
+	(mv(/bin/dwarf,linux,mail/2/intro,5.5.aux))
+	(mv(bin/dwarf,linux,mail/2/intro,5.5.aux))
+	(mv(bin/dwarf,linux,mail/gang,5.5.tex))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(cd(./code/mickey,pgeasy.dll))
+	(cd(./code,micky))
+	(cd(./code,mickey))
+	(ls(,**dot_3**))
+	(man(ls))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,linux,,,**dot_0**))
+	(cd(./mail,linux))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(find(,ps14.txt,,,**dot_0**))
+	(cd(./mail,2))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,gang)
+	(find(,gang,,,**dot_0**))
+	(mkdir(./bin/gang,my_thesis.txt))
+	(ls(./bin,gang))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(dwarf)
+	(cd(,dwarf))
+	(ls(,**dot_1**))
+	(find(,dwarf,,,**dot_1**))
+	(cd(mail,dwarf))
+	(ls(,**dot_2**))
+	(ls(,2))
+	(ls(,intro),ls(,RunAccel))
+	(ls(,dwarf))
+	(gzip(,2),gzip(,dwarf),gzip(,intro))
+	(tar(,2.tar,,2))
+	(compress(,2.tar))
+	(tar(,dwarf.tar,,dwarf))
+	(compress(,dwarf.tar))
+	(ls(,**dot_2**))
+	(tar(,intro.tar,,intro))
+	(compress(,intro.tar))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(ls(,rl.exe))
+	(find(,rl.exe,,,**dot_0**))
+	(ls(mail/2/dwarf,rl.exe))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(find(,ps,,,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(mv(mail,dwarf,mail/dwarf/linux,chapin-research.ps))
+	(mv(mail,dwarf,mail/dwarf/set,aslisp1.ps))
+	(mv(mail,dwarf,mail/dwarf/set,5.5.ps))
+	(find(,ps,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,,,,linux))
+	(find(,,,,**dot_0**),find(,,,,linux))
+	(find(,linux,,,**dot_0**))
+	(echo(text file))
+	(less(code/linux,bob.bob))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(find(,aml,,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(mv(bin,linux,bin,aml.config))
+	(mv(bin,linux,bin/2,aml.pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(find(,,,,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(bin,3))
+	(ls(bin/3,gang))
+	(ls(bin,gang))
+	(ls(gin/gang,intro))
+	(ls(bin/gang,intro))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(find(,ps14.txt,,,**dot_0**))
+	(ls(bin,ps14.txt))
+
+,
+*******************************************
+Goal: create-file(joe.txt,linux)
+	(find(,linux,,,**dot_0**))
+	(ls(mail,linux))
+	(cp(mail/linux,joe.txt,mail/linux,zz.txt))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,,**dot_0**))
+	(ls(code/gang/2,rl.exe))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(slate.cs.rochester.edu:/var/mail)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(find(,gang,,,**dot_0**))
+	(compress(bin,gang))
+	(ls(code,gang))
+	(compress(code/gange,mickey))
+	(compress(code/gang,mickey))
+	(ls(bin,gang))
+	(compress(bin/gang,2))
+	(compress(bin/gang,3))
+	(compress(bin/gang,true))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,dwarf)
+	(man(find))
+	(find(,,50,,**dot_0**))
+
+,
+*******************************************
+Goal: copy-files-by-attr-name-ext(pl,intro)
+	(find(,pl,,,**dot_0**))
+	(find(,intro,,,**dot_0**))
+	(cd(,code))
+	(cp(../mail/dwarf,intro,,convert.pl))
+	(cp(../mail/dwarf,intro,gang,accessor.pl))
+	(cp(../mail/dwarf,intro,linux,aml.pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(tex)
+	(find(,tex,,,**dot_0**))
+	(pwd())
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(ps)
+	(find(,ps,,,**dot_0**))
+	(rm(bin/2/gang,5.5.ps))
+	(rm(code/dwarf/mickey,aslisp1.ps))
+	(rm(mail/gang,chapin-research.ps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(ls(,**dot_0**))
+	(grep(a.c,,**dot_0**))
+	(ls(,**dot_0**))
+	(pwd())
+	(grep(a.c,,**dot_0**))
+	(find(,,,,a.c))
+	(find(,,,,a.c),find(,,,,**dot_0**))
+	(cd(/mail/dwarf,3))
+	(cd(mail/dwarf,3))
+	(ls(,**dot_2**))
+	(vi(,a.c))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,,,,README))
+	(find(,,,,README),find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(gang)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(**dotdot_1**,bin))
+	(ls(,**dot_2**))
+	(cd(**dotdot_2**,mail))
+	(ls(,**dot_3**))
+	(tar(,gang.tar.gz,,gang))
+	(tar(,gang.tar.gz,,gang))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,bin))
+	(ls(,**dot_5**))
+	(cd(,dwarf))
+	(ls(,**dot_6**))
+	(cd(,mickey))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,**dot_8**))
+	(ls(,**dot_9**))
+	(cd(,**dotdot_9**))
+	(ls(,**dot_10**))
+	(cd(,intro))
+	(ls(,**dot_11**))
+	(tar(,gang.tar.gz,,gang))
+	(cd(,linux))
+	(ls(,**dot_12**))
+	(cd(,**dotdot_12**))
+	(ls(,**dot_13**))
+	(cd(,**dotdot_13**))
+	(ls(,**dot_14**))
+	(cd(,intro))
+	(ls(,**dot_15**))
+	(cd(,**dotdot_15**))
+	(ls(,**dot_16**))
+	(cd(,dwarf))
+	(ls(,**dot_17**))
+	(cd(,mickey))
+	(ls(,**dot_18**))
+	(cd(,**dotdot_18**))
+	(ls(,**dot_19**))
+	(cd(,**dotdot_19**))
+	(ls(,**dot_20**))
+	(cd(,set))
+	(ls(,**dot_21**))
+	(cd(**dotdot_21**,true))
+	(ls(,**dot_22**))
+	(cd(,**dotdot_22**))
+	(ls(,**dot_23**))
+	(cd(,**dotdot_23**))
+	(ls(,**dot_24**))
+	(cd(,code))
+	(ls(,**dot_25**))
+	(cd(**dotdot_25**,mail))
+	(ls(,**dot_26**))
+	(cd(,2))
+	(ls(,**dot_27**))
+	(cd(,dwarf))
+	(ls(,**dot_28**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,linux)
+	(ls(,**dot_0**))
+	(ls(,code))
+	(mv(code,linux,,pl),mv(code,linux,*,pl),mv(code,linux,*/*,pl),mv(code,linux,*/*/*,pl),mv(code,linux,*/*/*/*,pl))
+	(cd(code,linux))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(man(find))
+	(find(,,,,pl))
+	(find(,,,,**dot_2**))
+	(clear())
+	(pwd())
+	(cd(,**dotdot_2**))
+	(find(,,,,**dot_3**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,miey))
+	(ls(,**dot_2**))
+	(cd(,mickey))
+	(ls(,**dot_3**))
+	(cd(,2))
+	(ls(,**dot_4**))
+	(ls(,pge-l),ls(,pgeasy.dll))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,2))
+	(ls(,**dot_2**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,,,,a.c))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(find(,,,,c))
+	(find(,,,,**dot_2**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(rm(,pl))
+	(find(,,,,**dot_0**))
+	(cd(,bin))
+	(rm(,pl))
+	(find(,,,,**dot_1**))
+	(cd(,dwarf))
+	(rm(,pl))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(find(,,,,**dot_4**))
+	(cd(,mail))
+	(rm(,pl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(ls(,**dot_0**))
+	(find(,,,,b.c))
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: copy-files-by-attr-name-ext(ps,linux)
+	(ls(,**dot_0**))
+	(find(,,,,**dot_0**))
+	(mkdir(,linux))
+	(ls(,**dot_0**))
+	(cd(bin,dwarf))
+	(cp(../..,linux,,ps))
+	(cd(**dotdot_1**,**dotdot_1**))
+	(cd(,mail))
+	(cp(**dotdot_3**,linux,,ps))
+	(cd(,**dotdot_3**))
+	(cd(,linux))
+	(ls(,**dot_5**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(du(,**dot_0**))
+	(find(,,,,**dot_0**))
+	(cd(code,true))
+	(du(,**dot_1**))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(ls(,**dot_0**))
+	(cd(,linux))
+	(mkdir(,linux))
+	(touch(,bob.bob))
+	(ls(,**dot_1**))
+	(rm(,bob.bob))
+	(cd(,linux))
+	(touch(,bob.bob))
+	(ls(,**dot_2**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,,,,libtool))
+	(find(,,,,*libtool*))
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,linux)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,2))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(cd(,**dotdot_3**))
+	(pwd())
+	(ls(,aml))
+	(ls(,**dot_4**))
+	(mv(code/linux,a.config,bin/gang,aml.config))
+	(mv(./code/linux,aml.pl,./bin/gang,aml.pl))
+	(mv(code/linux,aml.config,bin/2,aml.config))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(dwarf)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(man(tar))
+	(info(tar))
+	(tar(,v,,minidwarf),tar(,v,,dwarf))
+	(tar(,v,,dwarf))
+	(ls(,**dot_1**))
+	(tar(,minidwarf,,dwarf))
+	(ls(,**dot_1**))
+	(info(gzip))
+	(gzip(,minidwarf))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(pwd())
+	(ls(,**dot_2**))
+	(cd(code/3,gang))
+	(tar(,minidwarf2.tar,,dwarf))
+	(gzip(,minidwarf2.tar))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Jan21)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(code,2))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(ls(,**dot_0**))
+	(mv(mail/set,dwarf,mail/set,capture.txt))
+	(mv(mail/set,dwarf,bin/intro,5.5.aux))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(ls(,**dot_0**))
+	(cd(bin/intro,gang))
+	(ls(,**dot_1**))
+	(gzip(,gang))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(cd(,,,))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(tar(,gang.tar,,gang))
+	(gzip(,gang.tar))
+	(cd(,**dotdot_4**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,**dotdot_6**))
+	(pwd())
+	(ls(,**dot_7**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(,bin))
+	(ls(,code))
+	(ls(,mail))
+	(cd(,mail))
+	(tar(,dwarf.tgz,,dwarf))
+	(cd(,intro))
+	(tar(,dwarf.tgz,,dwarf))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(ls(,**dot_0**))
+	(cd(ml,intro))
+	(cd(,mail))
+	(cd(,intro))
+	(tar(,2.tgz,,2))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(ps)
+	(find(,ps,,,**dot_0**))
+	(cd(,bin))
+	(rm(,ps))
+	(cd(code,2))
+	(cd(,code))
+	(cd(../code,2))
+	(rm(,ps))
+	(cd(../mail/gang,true))
+	(cd(../../mail/gang,true))
+	(rm(,ps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(code,dwarf))
+	(touch(,joe.txt))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(ls(,**dot_0**))
+	(ls(,code))
+	(ls(,bin))
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,mail))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+	(file(,README.pdf))
+	(file(,README.PDF))
+	(cd(,**dotdot_1**))
+	(pwd())
+	(find(,pgeasy.dll,,,**dot_2**))
+	(ls(mail/3/dwarf,pgeasy.dll))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(dwarf)
+	(ls(,**dot_0**))
+	(cd(,mail))
+	(ls(,**dot_1**))
+	(tar(,dwarf.tar,,dwarf))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(ls(,bin))
+	(ls(bin,gang))
+	(ls(,mail))
+	(ls(,code))
+	(cd(,code))
+	(tar(,dwarf.tar,,dwarf))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(ls(,mail))
+	(ls(mail,linux))
+	(ls(mail/linux,2))
+	(ls(mail/linux/2,gang))
+	(ls(mail,set))
+	(ls(mail/linux,gang))
+	(ls(mail/linux/gang,true))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(tex)
+	(find(,tex,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(tar(,dwarf.tar,mail/true,dwarf),tar(,dwarf.tar,mail,dwarf))
+
+,
+*******************************************
+Goal: create-file(joe.txt,linux)
+	(find(,linux,,,**dot_0**))
+	(cd(code,linux))
+	(touch(,joe.txt))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(ls(code/mickey,pgeasy.dll))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Mar21)
+	(date())
+	(man(find))
+	(date())
+	(cal())
+	(find(,,,,**dot_0**))
+	(find(,,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(mickey)
+	(find(,mickey,,,**dot_0**))
+	(tar(,mickey.tar,bin,mickey))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,linux)
+	(find(,linux,,,**dot_0**))
+	(find(,pl,,,**dot_0**))
+	(mv(code/2,linux,bin/mickey,convert.pl))
+	(mv(,!$,code/2,constructor.pl))
+	(ls(,**dot_0**))
+	(mv(code/2,linux,,!))
+	(mv(code/2,linux,mail,accessor.pl))
+	(mv(code/2,linux,mail/gang,aml.pl))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(touch(bin/gang/dwarf,joe.txt))
+	(touch(mail/dwarf,joe.txt))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(ls(bin/mickey/gang,pgeasy.dll))
+	(ls(bin/mickey/gang,pgeasy.dll))
+
+,
+*******************************************
+Goal: create-dir(egg_salad.exe,2)
+	(ls(,**dot_0**))
+	(find(,2,,,**dot_0**))
+	(cd(bin/dwarf,2))
+	(mkdir(,egg_salad.exe))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(find(,a.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(ps)
+	(find(,ps,,,**dot_0**))
+	(rm(bin/intro,chapin-research.ps))
+	(rm(bin/dwarf/linux,5.5.ps))
+	(rm(bin/gang,aslisp1.ps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(ls(mail/gang/mickey,pgeasy.dll))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(porter)
+	(ping(porter,))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(find(,b.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(find(,eps,,,**dot_0**))
+	(mv(code/set,dwarf,code/set/dwarf/gang,agent.eps))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,dwarf))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,miey))
+	(ls(,**dot_2**))
+	(cd(,mickey))
+	(ls(,**dot_3**))
+	(cd(,dwarf))
+	(ls(,**dot_4**))
+	(cd(,**dotdot_4**))
+	(tar(,z,**dot_5**,dwarf),tar(,z,,dwarf.tgz))
+	(tar(,z,,dwarf.tgz),tar(,z,**dot_5**,dwarf))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,set))
+	(ls(,**dot_7**))
+	(cd(**dotdot_7**,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,code))
+	(ls(,**dot_9**))
+	(cd(,3))
+	(ls(,**dot_10**))
+	(cd(**dotdot_10**,**dotdot_10**))
+	(cd(,mail))
+	(ls(,**dot_12**))
+	(ls(,2))
+	(cd(,2))
+	(tar(,z,,dwarf.tgz),tar(,z,**dot_13**,dwarf))
+	(ls(,gang))
+	(cd(**dotdot_13**,gang))
+	(ls(,**dot_14**))
+	(ls(,gang))
+	(cd(**dotdot_14**,true))
+	(ls(,**dot_15**))
+	(ls(,lux))
+	(ls(,linux))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(rlogin(amsterdam))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(50000)
+	(echo(pipe),echo(is),echo(really),echo(really),echo(useful))
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,intro))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,code))
+	(ls(,**dot_5**))
+	(ls(,**dot_5**))
+	(rm(,aslisp1.ps))
+	(ls(,**dot_5**))
+	(rm(,aslisp1.ps))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,mail))
+	(ls(,**dot_7**))
+
+,
+*******************************************
+Goal: know-filespace-free(slate.cs.rochester.edu:/var/mail)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(rsh(amsterdam,who))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(man(ls))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(ls(,dwarf))
+	(ls(,**dot_1**))
+	(ls(dwarf,true))
+	(cd(**dotdot_1**,bin))
+	(ls(,**dot_2**))
+	(cd(**dotdot_2**,code))
+	(ls(,**dot_3**))
+	(ls(,intro))
+	(ls(,set))
+	(ls(set,gang))
+	(cd(**dotdot_3**,mail))
+	(ls(,**dot_4**))
+	(cd(,2))
+	(ls(,**dot_5**))
+	(tar(,z,,linux.tgz),tar(,z,**dot_5**,linux))
+	(tar(,z,,mickey.tgz),tar(,z,**dot_5**,mickey))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Mar21)
+	(ls(,**dot_0**))
+	(ls(mail/intro,pg_ctl))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(ls(,**dot_0**))
+	(ls(mail/3,b.c))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(ps)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(,code))
+	(ls(,mail))
+	(cd(,mail))
+	(rm(,ps))
+	(cd(,dwarf))
+	(rm(,ps))
+	(cd(,gang))
+	(rm(,ps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(echo(repeat))
+	(ls(,b.c))
+	(echo(interesting))
+	(ls(,**dot_0**))
+	(ls(code/dwarf,b.c))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(ls(,**dot_0**))
+	(mv(code,gang,code,5.5.aux))
+	(mv(bin/gang,5.5.aux,bin,5.5.auc))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(mv(**dot_1**,gang,,5.5.aux))
+	(mv(**dot_1**,gang,./3/true,5.5.tex))
+	(pwd())
+	(cd(,gang))
+	(mv(,**dot_2**,./dwarf/mickey,5.5.dvi))
+	(mv(,**dot_2**,../../code/dwarf,5.5.ps))
+	(cd(**dotdot_2**,**dotdot_2**))
+	(ls(,**dot_3**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(mickey)
+	(ls(,**dot_0**))
+	(cd(code,gang))
+	(tar(,z,,mickey.tgz),tar(,z,**dot_1**,mickey))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,dwarf)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(mv(./gang,dwarf,,5.5.aux))
+	(cd(**dotdot_1**,code))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(mv(../bin/gang,dwarf,,capture.txt))
+	(mv(../bin/gang,dwarf,./gang/linux,capture.txt))
+	(cd(**dotdot_2**,mail))
+	(ls(,**dot_3**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(tex)
+	(ls(,**dot_0**))
+	(ls(./bin/gang/dwarf,5.5.tex))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(a.c)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(bin/true/dwarf/intro,a.c))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(ls(,**dot_0**))
+	(ls(mail,README))
+	(ls(code/linux,gang))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(aml,gang)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(**dotdot_1**,code))
+	(ls(,**dot_2**))
+	(cd(**dotdot_2**,mail))
+	(ls(,**dot_3**))
+	(mv(**dot_3**,gang,linux,aml.pl))
+	(mv(**dot_3**,gang,dwarf/intro,aml.config))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(gang)
+	(ls(,**dot_0**))
+	(find(,gang,,,**dot_0**))
+	(ls(/bin,gang))
+	(ls(bin,gang))
+	(tar(,bingang.tar.gz,./bin,gang))
+	(tar(,codegang.tar.gz,./code/mickey/dwarf,gang))
+	(tar(,mailgang.tar.gz,./mail,gang))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,linux)
+	(find(,5.5,,,**dot_0**))
+	(ls(,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(cp(mail/gang/2,linux,./bin/dwarf/3,5.5.ps),cp(mail/gang/2,linux,./bin/mickey,5.5.aux),cp(mail/gang/2,linux,./mail/gang,5.5.dvi),cp(mail/gang/2,linux,./mail/gang/2,5.5.tex))
+	(mv(mail/gang/2,linux,./bin/dwarf/3,5.5.ps),mv(mail/gang/2,linux,./bin/mickey,5.5.aux),mv(mail/gang/2,linux,./mail/gang,5.5.dvi),mv(mail/gang/2,linux,./mail/gang/2,5.5.tex))
+	(ls(./bin/dwarf/3,ps))
+
+,
+*******************************************
+Goal: create-dir(my_thesis.txt,2)
+	(find(,2,,,**dot_0**))
+	(mkdir(./mail/2,my_thesis.txt))
+	(find(,my_thesis.txt,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-dir(s2,gang)
+	(find(,gang,,,**dot_0**))
+	(mkdir(./mail/gang,s2))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(cd(mail,dwarf))
+	(du(,**dot_1**))
+	(ls(,**dot_1**))
+	(du(,**dot_1**))
+	(du(,**dot_1**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,,**dot_0**))
+	(cd(mail/dwarf/gang,gang))
+	(du(,**dot_1**))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(hoover.csug.rochester.edu:/u)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(man(find))
+	(find(,,25600,,**dot_0**))
+	(find(,linux,,,**dot_0**))
+	(ls(./mail/dwarf/set,cas.c))
+	(find(,,50,,**dot_0**))
+	(ls(./mail/linux/true,capture.txt))
+	(ls(./mail/dwarf/2/mickey/dwarf,5.5.aux))
+	(mv(./mail,linux,./mail/linux/true,capture.txt),mv(./mail,linux,./mail/dwarf/2/mickey/dwarf,5.5.aux))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(find(,eps,,,**dot_0**))
+	(find(,dwarf,,,**dot_0**))
+	(mv(./bin/gang,dwarf,./bin/gang/set,agent.eps))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,linux)
+	(find(,,75,,**dot_0**))
+	(ls(mail,linux))
+	(ls(mail,linux))
+	(mv(mail,linux,./mail,capture.txt),mv(mail,linux,./mail/dwarf/gang,5.5.aux))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(pl)
+	(find(,pl,,,**dot_0**))
+	(rm(./code/dwarf/dwarf,convert.pl),rm(./mail/intro,constructor.pl),rm(./mail/intro,aml.pl),rm(./mail/intro,accessor.pl))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(40000)
+	(find(,,40000,,**dot_0**))
+	(rm(./mail/gang/dwarf,aslisp1.ps),rm(./mail/gang/2/set,chapin-research.ps),rm(./mail/gang/linux,cycle.tiff))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(nye)
+	(ping(nye,))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(find(,ps14.txt,,,**dot_0**))
+	(cd(code,2))
+	(du(,**dot_1**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(cd(,bin))
+	(du(,**dot_1**))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(canberra)
+	(ping(canberra,))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,*README*,,,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(find(,c,,,**dot_0**))
+
+,
+*******************************************
+Goal: copy-files-by-attr-size-lt(50,linux)
+	(man(find))
+	(ls(,**dot_0**))
+	(find(,*linux*,,,**dot_0**))
+	(ls(,bin))
+	(ls(,bin))
+	(ls(,code))
+	(ls(,mail))
+	(cd(,code))
+	(ls(,2))
+	(cp(../co/gang,linux,,5.5.aux))
+	(ls(,**dot_1**))
+	(cp(../code/gang,linux,2,5.5.aux))
+	(ls(,dwarf))
+	(ls(2,dwarf))
+	(ls(,gang))
+	(ls(,gang),ls(,linux))
+	(ls(gang,linux))
+	(ls(gang,true))
+	(pwd())
+	(ls(,**dot_1**))
+	(ls(,set))
+	(ls(set,intro))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(cd(,mail))
+	(ls(,**dot_3**))
+	(cd(,dwarf))
+	(ls(,**dot_4**))
+	(cd(,3))
+	(ls(,**dot_5**))
+	(cd(**dotdot_5**,gang))
+	(ls(,**dot_6**))
+	(cd(,**dotdot_6**))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,mickey))
+	(ls(,**dot_9**))
+	(cd(,gang))
+	(ls(,**dot_10**))
+	(pwd())
+	(cp(../../code/gang,linux,,capture.txt))
+	(find(,,,**dotdot_10**,**dotdot_10**),find(,,,,*linux*))
+	(find(,*linux*,,../..,**dotdot_10**))
+	(ls(,**dot_10**))
+	(cp(../../../code/gang,linux,,capture.txt))
+	(cd(,**dotdot_10**))
+	(ls(,**dot_11**))
+	(cd(,**dotdot_11**))
+	(ls(,**dot_12**))
+	(cd(,**dotdot_12**))
+	(ls(,**dot_13**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(find(,*linux*,,,**dot_0**))
+	(find(,ps,,,**dot_0**))
+	(mv(./mail,linux,./bin/gang/intro,5.5.ps))
+	(mv(./mail,linux,./bin/gang/gang,aslisp1.ps))
+	(mv(./mail,linux,./mail/3/gang,chapin-research.ps))
+	(find(,ps,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-free(slate.cs.rochester.edu:/var/mail)
+	(df(,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(ls(./code/dwarf/3,pgeasy.dll))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(2)
+	(find(,2,,,**dot_0**))
+	(cd(code/mickey,2))
+	(ls(,**dot_1**))
+	(compress(,gang))
+	(ls(,**dot_1**))
+	(ls(,gang))
+	(man(compress))
+	(ls(,**dot_1**))
+	(pwd())
+	(compress(,gang))
+	(ls(,gang))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(find(,dwarf,,,**dot_0**))
+	(find(,ps,,,**dot_0**))
+	(mv(./mail/gang,dwarf,./bin/gang/intro,chapin-research.ps))
+	(mv(./mail/gang,dwarf,./code/2/set,aslisp1.ps))
+	(mv(./mail/gang,dwarf,./code/2/set,5.5.ps))
+	(find(,ps,,,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(pgeasy.dll)
+	(find(,pgeasy.dll,,,**dot_0**))
+	(ls(./mail/gang,pgeasy.dll))
+
+,
+*******************************************
+Goal: find-file-by-attr-date-modification-exact(Mar21)
+	(man(find))
+	(date())
+	(find(,,,,**dot_0**))
+	(find(,,,,**dot_0**))
+	(ls(,**dot_0**))
+	(find(,,,,**dot_0**))
+	(find(,,,,**dot_0**),find(,,,,-ctime))
+	(find(,,,,**dot_0**))
+	(ls(,**dot_0**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,5.5,,,**dot_0**))
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: remove-files-by-attr-size-gt(50000)
+	(du(,**dot_0**))
+	(sort(,t))
+	(cat(,tt))
+	(rm(./bin/3,gang),rm(./bin/3/2,dwarf),rm(./code/dwarf,linux),rm(./mail,set),rm(./code,dwarf),rm(./mail,intro),rm(./code/mickey,gang),rm(./bin/3,2),rm(./bin,3))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(find(,ps,,,**dot_0**))
+	(mv(,linux,./bin/dwarf,aslisp1.ps),mv(,linux,./code/gang/intro,chapin-research.ps),mv(,linux,./mail/2/set,5.5.ps))
+	(ls(,linux))
+	(pwd())
+	(ls(,**dot_0**))
+	(mkdir(,linux))
+	(mv(,linux,./bin/dwarf,aslisp1.ps),mv(,linux,./code/gang/intro,chapin-research.ps),mv(,linux,./mail/2/set,5.5.ps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(ls(,lib))
+	(ls(,**dot_0**))
+	(ls(*,lib))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,intro))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(cd(,set))
+	(ls(,**dot_4**))
+	(cd(,gang))
+	(ls(,**dot_5**))
+	(cd(**dotdot_5**,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,**dotdot_6**))
+	(ls(,**dot_7**))
+	(cd(,code))
+	(ls(,**dot_8**))
+	(cd(,gang))
+	(ls(,**dot_9**))
+	(cd(,true))
+	(ls(,**dot_10**))
+	(cd(**dotdot_10**,**dotdot_10**))
+	(ls(,**dot_11**))
+	(cd(,**dotdot_11**))
+	(ls(,**dot_12**))
+	(cd(,mail))
+	(ls(,**dot_13**))
+	(cd(,2))
+	(ls(,**dot_14**))
+	(cd(,3))
+	(ls(,**dot_15**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,linux)
+	(ls(,**dot_0**))
+	(cd(,mail))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(ls(,mickey))
+	(ls(,dwarf))
+	(mv(,linux,dwarf,5.5.ps))
+	(ls(,2))
+	(ls(2,dwarf))
+	(pwd())
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,code))
+	(ls(,**dot_5**))
+	(mv(../mail,linux,,chap))
+	(ls(,**dot_5**))
+	(cd(,gang))
+	(ls(,**dot_6**))
+	(cd(**dotdot_6**,**dotdot_6**))
+	(ls(,**dot_7**))
+	(cd(,bin))
+	(ls(,**dot_8**))
+	(mv(../mail,linux,,ps))
+	(ls(,**dot_8**))
+	(cd(,gang))
+	(ls(,**dot_9**))
+	(cd(,3))
+	(ls(,**dot_10**))
+	(cd(,**dotdot_10**))
+	(cd(,set))
+	(ls(,**dot_12**))
+	(cd(,**dotdot_12**))
+	(ls(,**dot_13**))
+	(cd(,**dotdot_13**))
+	(ls(,**dot_14**))
+	(cd(,intro))
+	(ls(,**dot_15**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(ps14.txt)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,2))
+	(ls(,**dot_2**))
+	(cd(,intro))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,**dotdot_4**))
+	(cd(,dwarf))
+	(ls(,**dot_6**))
+	(cd(,**dotdot_6**))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,code))
+	(ls(,**dot_9**))
+	(cd(,gang))
+	(ls(,**dot_10**))
+	(cd(,dward))
+	(ls(,**dot_11**))
+	(cd(,dwarf))
+	(ls(,**dot_12**))
+	(cd(,2))
+	(cd(,2))
+	(cd(,3))
+	(ls(,**dot_15**))
+	(cd(,**dotdot_15**))
+	(ls(,**dot_16**))
+	(cd(,**dotdot_16**))
+	(ls(,**dot_17**))
+	(cd(,**dotdot_17**))
+	(ls(,**dot_18**))
+	(cd(,**dotdot_18**))
+	(ls(,**dot_19**))
+	(cd(,mail))
+	(ls(,**dot_20**))
+	(cd(,gang))
+	(ls(,**dot_21**))
+	(ls(,gang))
+	(cd(,gang))
+	(ls(,ps14))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(ls(,**dot_0**))
+	(ls(,bin))
+	(ls(bin,intro))
+	(ls(,code))
+	(ls(code,gang))
+	(ls(code/gang,gang))
+	(ls(code/gang,true))
+	(ls(,**dot_0**))
+	(cd(,mail))
+	(ls(,**dot_1**))
+	(ls(,2))
+	(mv(../code/gang,dwarf,2,eps))
+	(ls(2,set))
+	(ls(,gang))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(dwarf)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,linux))
+	(ls(,**dot_2**))
+	(cd(**dotdot_2**,true))
+	(ls(,**dot_3**))
+	(cd(,gang))
+	(ls(,**dot_4**))
+	(cd(,intro))
+	(ls(,**dot_5**))
+	(cd(**dotdot_5**,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,**dotdot_6**))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,code))
+	(ls(,**dot_9**))
+	(cd(,**dotdot_9**))
+	(cd(,mail))
+	(ls(,**dot_11**))
+	(cd(,2))
+	(ls(,**dot_12**))
+	(cd(,dwarf))
+	(ls(,**dot_13**))
+	(tar(,z,set,**dot_13**))
+	(ls(,set))
+	(which(zip))
+	(zip(,set.zip,set,**dot_13**))
+	(ls(,**dot_13**))
+	(cd(,**dotdot_13**))
+	(ls(,**dot_14**))
+	(cd(,gang))
+	(ls(,**dot_15**))
+	(cd(,**dotdot_15**))
+	(ls(,**dot_16**))
+	(cd(,**dotdot_16**))
+	(ls(,**dot_17**))
+	(cd(,dwarf))
+	(ls(,**dot_18**))
+	(cd(,**dotdot_18**))
+	(cd(,gang))
+	(ls(,**dot_20**))
+	(cd(,**dotdot_20**))
+	(cd(,mickey))
+	(ls(,**dot_22**))
+	(cd(,3))
+	(ls(,**dot_23**))
+	(cd(../..,**dotdot_23**))
+	(ls(,**dot_24**))
+	(cd(,mail))
+	(ls(,**dot_25**))
+	(cd(,2))
+	(ls(,**dot_26**))
+	(cd(,dwarf))
+	(ls(,**dot_27**))
+
+,
+*******************************************
+Goal: know-filespace-free(slate.cs.rochester.edu:/var/mail)
+	(df(/var,mail))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(find(,linux,,,**dot_0**))
+	(touch(bin/linux,bob.bob))
+	(ls(bin,linux))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(touch(bin/linux,bob.bob))
+	(find(,linux,,,**dot_0**))
+	(touch(code/mickey/dwarf/linux,bob.bob))
+	(ls(code/mickey/dwarf,linux))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(maputo)
+	(rlogin(maputo))
+
+,
+*******************************************
+Goal: create-dir(egg_salad.exe,linux)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+	(cd(,lunux))
+	(cd(,linux))
+	(mkdir(,egg_salad.exe))
+
+,
+*******************************************
+Goal: create-file(bob.bob,dwarf)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,dwarf))
+	(ls(,**dot_2**))
+	(touch(,bob.bob))
+	(ls(,**dot_2**))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(vax1.cs.rochester.edu:/home/vax1/u)
+	(cd(/home,vax1))
+	(du(,u))
+
+,
+*******************************************
+Goal: know-filespace-usage-partition(slate.cs.rochester.edu:/var/mail)
+	(cd(,var))
+	(ls(,**dot_1**))
+	(du(,mail))
+	(du(,mail))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,gang))
+	(ls(,**dot_2**))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(il/gang,dwarf))
+	(cd(,mail))
+	(cd(,gang))
+	(cd(,dwarf))
+	(ls(,**dot_4**))
+	(touch(,joe.txt))
+	(ls(,**dot_4**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(ls(,**dot_0**))
+	(find(,libtool,,,**dot_0**))
+	(find(,libtool,,,**dot_0**))
+	(ls(,**dot_0**))
+	(find(,libtool,,,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(code,linux))
+	(ls(,**dot_1**))
+	(less(,libtool.txt))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(ls(,**dot_0**))
+	(pwd())
+	(du(,**dot_0**))
+	(du(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(mv(mail/gang/dwarf,linux,code/2/mickey,5.5.aux))
+	(ls(,**dot_2**))
+	(cd(,mail))
+	(ls(,**dot_3**))
+	(ls(,**dot_3**))
+	(mv(mail/gang/dwarf,linux,,capture.txt))
+	(ls(,**dot_3**))
+	(mv(**dotdot_3**,mail,,capture.txt))
+	(mv(gang/dwarf,linux,,capture.txt))
+
+,
+*******************************************
+Goal: know-filespace-free(slate.cs.rochester.edu:/var/mail)
+	(rlogin(slate))
+	(cd(,var))
+	(cd(,slate))
+	(cd(,var))
+	(ls(,**dot_3**))
+	(pwd())
+	(cd(,mail))
+	(ls(,**dot_4**))
+	(cd(,**dotdot_4**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(ps,dwarf)
+	(pwd())
+	(ls(,ps))
+	(ls(,ps),ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(,ps))
+	(mv(/mail,dwarf,/bin/mickey/gang,aslisp1.ps))
+	(pwd())
+	(mv(/mail,dwarf,bin/mickey/gang,aslisp1.ps))
+	(mv(mail,dwarf,bin/mickey/gang,aslisp1.ps))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(b.c)
+	(find(,b.c,,,**dot_0**))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(**dotdot_1**,code))
+	(ls(,**dot_2**))
+	(ls(,dwarf))
+	(ls(dwarf,dwarf))
+	(ls(dwarf/dwarf,true))
+	(ls(,gang))
+	(cd(,gang))
+	(ls(,intro))
+	(ls(,set))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,**dotdot_4**))
+	(ls(,**dot_5**))
+	(cd(,mail))
+	(ls(,**dot_6**))
+	(cd(,2))
+	(ls(,**dot_7**))
+	(cd(,linux))
+	(vi(,bob.bob))
+	(ls(,**dot_8**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(pl,dwarf)
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,2))
+	(ls(,**dot_2**))
+	(ls(,intro))
+	(ls(,mickey))
+	(cd(**dotdot_2**,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(bin,linux))
+	(ls(,**dot_4**))
+	(cd(,gang))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,**dotdot_6**))
+	(ls(,**dot_7**))
+	(cd(,**dotdot_7**))
+	(ls(,**dot_8**))
+	(cd(,code))
+	(ls(,**dot_9**))
+	(ls(,true))
+	(ls(,3))
+	(cd(,true))
+	(ls(,2))
+	(ls(,3))
+	(ls(,gang))
+	(ls(gang,gang))
+	(cd(,**dotdot_10**))
+	(ls(,**dot_11**))
+	(cd(,**dotdot_11**))
+	(ls(,**dot_12**))
+	(cd(,mail))
+	(ls(,**dot_13**))
+	(ls(,set))
+	(cp(,dwarf,set,pl))
+	(ls(,**dot_13**))
+	(ls(,dwarf))
+	(ls(dwarf,dwarf))
+	(ls(,**dot_13**))
+	(cd(,**dotdot_13**))
+	(ls(,**dot_14**))
+	(cd(,code))
+	(ls(,**dot_15**))
+	(cd(,trye))
+	(cd(,true))
+	(ls(,**dot_17**))
+	(cd(,gang))
+	(ls(,**dot_18**))
+	(cd(,gang))
+	(ls(,**dot_19**))
+	(cd(../..,3))
+	(ls(,**dot_20**))
+	(cd(,**dotdot_20**))
+	(ls(,**dot_21**))
+	(cp(../mail,dwarf,,aml.pl))
+	(cp(../../mail,dwarf,,aml.pl))
+
+,
+*******************************************
+Goal: create-file(bob.bob,linux)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,true))
+	(ls(,**dot_2**))
+	(cd(,**dotdot_2**))
+	(ls(,**dot_3**))
+	(cd(,**dotdot_3**))
+	(ls(,**dot_4**))
+	(cd(,code))
+	(ls(,**dot_5**))
+	(cd(,**dotdot_5**))
+	(ls(,**dot_6**))
+	(cd(,bin))
+	(ls(,**dot_7**))
+	(cd(,intro))
+	(ls(,**dot_8**))
+	(cd(,**dotdot_8**))
+	(ls(,**dot_9**))
+	(cd(,**dotdot_9**))
+	(ls(,**dot_10**))
+	(find(,linux,,,**dot_10**))
+	(find(,linux,,,**dot_10**))
+	(cd(code/true/2,linux))
+	(ls(,**dotdot_11**))
+	(cp(,**dot_11**,**dotdot_11**,capture.txt))
+	(mv(,bob.bob,,capture.txt))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(5.5)
+	(find(,5.5,,,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(50,linux)
+	(find(,linux,,,**dot_0**))
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(mv(mail,linux,bin/gang/set,5.5.aux))
+	(mv(mail,linux,mail/linux/gang,capture.txt))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(compress(,dwarf))
+	(ls(,**dot_0**))
+	(compress(,**dot_0**))
+	(compress(,dwarf))
+	(ls(,code))
+	(ls(,mail))
+	(compress(,dwarf))
+	(compress(code,dwarf))
+	(ls(,**dot_0**))
+	(compress(mail,dwarf))
+	(ls(,bin))
+	(ls(bin,2))
+	(ls(bin/2,mickey))
+	(ls(,mail))
+	(ls(mail,set))
+	(compress(mail/set,swarf))
+	(compress(mail/set,dwarf))
+	(ls(,code))
+	(ls(code,3))
+	(ls(code,gang))
+	(ls(code/gang,gang))
+	(ls(,code),ls(gang,intro))
+	(ls(code,true))
+	(ls(code/true,linux))
+
+,
+*******************************************
+Goal: create-file(joe.txt,dwarf)
+	(vi(dwarf,joe.txt))
+
+,
+*******************************************
+Goal: determine-machine-connected-alive(amsterdam)
+	(ping(amsterdam,))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(ls(,rl.exe))
+	(ls(,**dot_0**))
+	(ls(,**dot_0**))
+	(cd(,bin))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+	(tree(,**dot_2**))
+	(cd(,code))
+	(ls(,**dot_3**))
+
+,
+*******************************************
+Goal: move-files-by-attr-size-lt(75,dwarf)
+	(ls(,**dot_0**))
+	(tree(,**dot_0**))
+	(cd(mail,intro))
+	(ls(,**dot_1**))
+	(cd(,dwarf))
+	(ls(,**dot_2**))
+	(ls(,**dot_2**))
+	(cd(,gang))
+	(ls(,**dot_3**))
+	(ls(,**dot_3**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,gang)
+	(cd(mail/intro/dwarf,gang))
+	(cd(,mail))
+	(ls(,**dot_2**))
+	(cd(,gang))
+	(ls(,**dot_3**))
+	(cd(,gang))
+	(ls(,**dot_4**))
+	(pwd())
+	(cd(,**dot_4**))
+	(pwd())
+	(ls(,**dot_5**))
+	(cd(/home/vax2/u23/blaylock/Experiment/Playground,wyi_20030422_104305))
+	(ls(,**dot_6**))
+	(tree(,**dot_6**))
+	(cp(mail/gang,gang,bin,5.5))
+	(cp(mail/gang,gang,code/dwarf/2,5.5))
+	(cp(mail/gang,gang,mail/3,5.5))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-stem(5.5,linux)
+	(ls(,**dot_0**))
+	(mv(,linux,,5.5))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(find(,libtool,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-attr-name(dwarf)
+	(ls(,**dot_0**))
+	(cd(,code))
+	(ls(,**dot_1**))
+	(mkdir(,linux))
+	(mv(,linux,,5.5))
+	(ls(,**dot_1**))
+	(find(,libtool,,,**dot_1**))
+	(find(,libtool,,,**dot_1**))
+	(find(,libtool,,,**dot_1**))
+	(tar(,test.tar,,dwarf))
+	(ls(,**dot_1**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-stem(libtool)
+	(cd(,code))
+	(ls(,**dot_1**))
+	(cd(,**dotdot_1**))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-ext(c)
+	(ls(,c))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,*,**dot_0**))
+
+,
+*******************************************
+Goal: know-filespace-usage-file(rl.exe)
+	(find(,rl.exe,,*,**dot_0**))
+	(ls(code,rl.exe))
+
+,
+*******************************************
+Goal: find-file-by-attr-name-exact(README)
+	(find(,README,,*,**dot_0**))
+
+,
+*******************************************
+Goal: move-files-by-attr-name-ext(eps,dwarf)
+	(find(,eps,,*,**dot_0**))
+	(mv(,dwarf,bin/2,agent.eps))
+	(find(,dwarf,,,**dot_0**))
+	(mv(code/dwarf,**dot_0**,bin/2,agent.eps))
+
+,
+*******************************************
+Goal: remove-files-by-attr-name-ext(ps)
+	(find(,ps,,*,**dot_0**))
+	(find(,ps,,,**dot_0**))
+
+,
+*******************************************
+Goal: compress-dirs-by-loc-dir(gang)
+	(find(,gang,,*,**dot_0**))
+	(gzip(bin,gang))
+	(gzip(bin/true,gang))
+	(gzip(bin/true/2,gang))
+
+)

@@ -1,0 +1,238 @@
+ ;; # find a file named arg1
+
+ ;; find(Prename,Name,Size,Prepath,Path)|
+ ;; find-file-by-attr-name-exact(Name),file-prepath(Prename),
+ ;; file-size(Size),source-dir-prepath(Prepath),source-dir-name(Path).
+
+ ;; cd(Prepath,Path)|
+ ;; find-file-by-attr-name-exact(Name),source-dir-prepath(Prepath),
+ ;; source-dir-name(Path).
+
+ ;; ls(Path,Name)|
+ ;; find-file-by-attr-name-exact(Name),source-dir-prepath(Path),
+ ;; file-name(Name).
+
+ ;; #find a file that ends in arg1
+ 
+ ;; find(Prename,Ext,Size,Prepath,Path)|
+ ;; find-file-by-attr-name-ext(Ext),file-prepath(Prename),file-size(Size),
+ ;; source-dir-prepath(Prepath),source-dir-name(Path).
+
+ ;; cd(Prepath,Path)|
+ ;; find-file-by-attr-name-ext(Ext),source-dir-prepath(Prepath),
+ ;; source-dir-name(Path).
+
+ ;; ls(Path,Ext)|
+ ;; find-file-by-attr-name-ext(Ext),source-dir-prepath(Path),file-name(Ext).
+
+ ;; #find a file that begins with arg1
+
+ ;; find(Prename,Stem,Size,Prepath,Path)|
+ ;; find-file-by-attr-name-stem(Stem),file-prepath(Prename),
+ ;; file-size(Size),source-dir-prepath(Prepath),source-dir-name(Path).
+
+ ;; cd(Prepath,Path)|
+ ;; find-file-by-attr-name-stem(Stem),source-dir-prepath(Prepath),
+ ;; source-dir-name(Path).
+
+ ;; ls(Path,Stem)|
+ ;; find-file-by-attr-name-stem(Stem),source-dir-prepath(Path),file-name(Stem).
+
+ ;; #find a file that was last modified arg1
+ 
+ ;; cd(Prepath,Path)|
+ ;; find-file-by-attr-date-modification-exact(Date),source-dir-prepath(Prepath),
+ ;; source-dir-name(Path).
+
+
+ ;; ls(Path,Name)|
+ ;; find-file-by-attr-date-modification-exact(Date),source-dir-prepath(Path),
+ ;; file-name(Name).
+
+
+ ;; egrep(Date,Prepath,Path)|
+ ;; find-file-by-attr-date-modification-exact(Date),file-prepath(Prepath),
+ ;; file-name(Path).
+ 
+ ;; fgrep(Date,Prepath,Path)|
+ ;; find-file-by-attr-date-modification-exact(Date),file-prepath(Prepath),
+ ;; file-name(Path).
+
+ ;; grep(Date,Prepath,Path)|
+ ;; find-file-by-attr-date-modification-exact(Date),file-prepath(Prepath),
+ ;; file-name(Path).
+
+ ;; #compress all directories named arg1
+
+ ;; compress(Prepath,Dirname)|
+ ;; compress-dirs-by-attr-name(Dirname),source-dir-prepath(Prepath),
+ ;; source-dir-name(Dirname).
+
+ ;; gtar(Destprepath,Destpath,Sourceprepath,Dirname)|
+ ;; compress-dirs-by-attr-name(Dirname),file-prepath(Destprepath),
+ ;; file-name(Destpath),source-dir-prepath(Sourceprepath),
+ ;; source-dir-name(Dirname).
+
+ ;; gzip(Prepath,Dirname)|
+ ;; compress-dirs-by-attr-name(Dirname),source-dir-prepath(Prepath),
+ ;; source-dir-name(Dirname).
+
+ ;; tar(Destprepath,Destpath,Sourceprepath,Dirname)|
+ ;; compress-dirs-by-attr-name(Dirname),file-prepath(Destprepath),
+ ;; file-name(Destpath),source-dir-prepath(Sourceprepath),
+ ;; source-dir-name(Dirname).
+
+ ;; zip(Destprepath,Destpath,Sourceprepath,Dirname)|
+ ;; compress-dirs-by-attr-name(Dirname),file-prepath(Destprepath),
+ ;; file-name(Destpath),source-dir-prepath(Sourceprepath),
+ ;; source-dir-name(Dirname).
+
+ ;; ## compress all subdirectories in directories arg1
+
+ ;; compress(Prepath,Dirname)|
+ ;; compress-dirs-by-loc-dir(Dirname),source-dir-prepath(Prepath),
+ ;; source-dir-name(Dirname).
+
+ ;; gtar(Destprepath,Destpath,Sourceprepath,Dirname)|
+ ;; compress-dirs-by-loc-dir(Dirname),file-prepath(Destprepath),
+ ;; file-name(Destpath),source-dir-prepath(Sourceprepath),
+ ;; source-dir-name(Dirname).
+
+ ;; gzip(Prepath,Dirname)|
+ ;; compress-dirs-by-loc-dir(Dirname),source-dir-prepath(Prepath),
+ ;; source-dir-name(Dirname).
+
+ ;; tar(Destprepath,Destpath,Sourceprepath,Dirname)|
+ ;; compress-dirs-by-loc-dir(Dirname),file-prepath(Destprepath),
+ ;; file-name(Destpath),source-dir-prepath(Sourceprepath),
+ ;; source-dir-name(Dirname).
+
+ ;; zip(Destprepath,Destpath,Sourceprepath,Dirname)|
+ ;; compress-dirs-by-loc-dir(Dirname),file-prepath(Destprepath),
+ ;; file-name(Destpath),source-dir-prepath(Sourceprepath),
+ ;; source-dir-name(Dirname).
+
+ ;; ##find out how much file space file arg1 uses
+
+ ;; ls(Path,Filename)|
+ ;; know-filespace-usage-file(Filename),file-name(Filename),
+ ;; file-prepath(Path).
+
+ ;; du(Prepath,Partition-name)|
+ ;; know-filespace-usage-partition(Partition-name),
+ ;; source-dir-name(Partition-name),source-dir-prepath(Prepath).
+
+ ;; ##find out how much file space is free on filesystem arg1
+
+ ;; df(Prepath,Partition-name)|
+ ;; know-filespace-free(Partition-name),
+ ;; source-dir-name(Partition-name),source-dir-prepath(Prepath).
+
+ ;; ##find out if machine arg1 is alive on the network on not
+
+ ;; ping(Machine-name,Machine-path)|
+ ;; determine-machine-connected-alive(Machine-name),
+ ;; machine-prepath(Machine-path).
+
+ ;; ruptime(Machine-name)|
+ ;; determine-machine-connected-alive(Machine-name).
+
+ ;; rsh(Machine-name,Command)|
+ ;; determine-machine-connected-alive(Machine-name).
+
+ ;; rlogin(Machine-name)|
+ ;; determine-machine-connected-alive(Machine-name).
+
+ ;; ##create a file named arg1 in a preexisting directory named arg2
+
+ ;; cd(Prepath,Dirname)|
+ ;; create-file(Filename,Dirname),file-name(Filename),source-dir-name(Dirname),
+ ;; source-dir-prepath(Prepath).
+
+ ;; vi(Prepath,Filename)|
+ ;; create-file(Filename,Prepath),file-name(Filename),source-dir-name(Prepath).
+
+ ;; cat(Prepath,Filename)|
+ ;; create-file(Filename,Prepath),file-name(Filename),source-dir-name(Prepath).
+
+ ;; touch(Prepath,Filename)|
+ ;; create-file(Filename,Prepath),source-dir-name(Prepath),file-name(Filename).
+
+ ;; ##create a subdirectory named arg1 in a preexisting directory named arg2
+
+ ;; mkdir(Dirname,Parent-dir-name)|
+ ;; create-dir(Dirname,Parent-dir-name),source-dir-name(Parent-dir-name),
+ ;; dir-name(Dirname).
+
+ ;; cd(Prepath,Parent-dir-name)|
+ ;; create-dir(Dirname,Parent-dir-name),source-dir-name(Parent-dir-name),
+ ;; source-dir-prepath(Prepath),dir-name(Dirname).
+
+ ;; ##delete all files ending in arg1
+
+ ;; rm(Prepath,Ext)|
+ ;; remove-files-by-attr-name-ext(Ext),file-name(Ext),file-prepath(Prepath).
+
+ ;; ##delete all files which contain more than arg1 bytes
+
+ ;; rm(Prepath,Name)|
+ ;; remove-files-by-attr-size-gt(Numbytes),file-size(Numbytes),file-prepath(Prepath),
+ ;; file-name(Name).
+
+ ;; ## copy all files ending in arg1 to a preexisting directory named arg2
+
+ ;; cp(Dest-prepath,Dirname,Source-prepath,Ext)|
+ ;; copy-files-by-attr-name-ext(Ext,Dirname),file-name(Ext),
+ ;; dest-dir-prepath(Prepath),dest-dir-name(Dirname),file-prepath(Source-prepath).
+
+ ;; ##copy all files containing less than arg1 bytes to a preexisting directory names arg2
+
+ ;; cp(Dest-prepath,Dirname,Source-prepath,Name)|
+ ;; copy-files-by-attr-size-lt(Numbytes,Dirname),filesize(Numbytes),
+ ;; dest-dir-name(Dirname),dest-dir-prepath(Dest-prepath),
+ ;; file-prepath(Source-prepath),file-name(Name).
+
+ ;; ## move all files ending in arg1 to a preexisting directory named arg2
+
+ ;; mv(Dest-prepath,Dirname,Source-prepath,Ext)|
+ ;; move-files-by-attr-name-ext(Ext,Dirname),file-name(Ext),
+ ;; file-prepath(Source-prepath),dest-dir-name(Dirname),
+ ;; dest-dir-prepath(Dest-prepath).
+
+ ;; copy-files-by-attr-name-ext(Ext,Dirname)|
+ ;; move-files-by-attr-name-ext(Ext,Dirname),file-name(Ext),dest-dir-name(Dirname).
+
+ ;; remove-files-by-attr-name-ext(Ext)|
+ ;; move-files-by-attr-name-ext(Ext,Dirname),file-name(Ext),dest-dir-name(Dirname).
+
+ ;; ## move all files beginning with arg1 to a preexisting directory named arg2
+
+ ;; mv(Dest-prepath,Dirname,Source-prepath,Stem)|
+ ;; move-files-by-attr-name-stem(Stem,Dirname),file-name(Stem),
+ ;; dest-dir-name(Dirname),file-prepath(Source-prepath),
+ ;; dest-dir-prepath(Dest-prepath).
+
+ ;; cp(Dest-prepath,Dirname,Source-prepath,Stem)|
+ ;; move-files-by-attr-name-stem(Stem,Dirname),file-name(Stem),
+ ;; dest-dir-name(Dirname),file-prepath(Source-prepath),
+ ;; dest-dir-prepath(Dest-prepath).
+
+ ;; rm(Source-prepath,Stem)|
+ ;; move-files-by-attr-name-stem(Stem,Dirname),file-name(Stem),
+ ;; dest-dir-name(Dirname),file-prepath(Source-prepath).
+
+ ;; ## move all files containing less than arg1 bytes to a preexisting directory
+
+ ;; mv(Dest-prepath,Dirname,Source-prepath,Name)|
+ ;; move-files-by-attr-size-lt(Num-bytes,Dirname),file-size(Num-bytes),
+ ;; dest-dir-name(Dirname),file-name(Name),file-prepath(Source-prepath),
+ ;; dest-dir-prepath(Dest-prepath).
+
+ ;; cp(Dest-prepath,Dirname,Source-prepath,Name)|
+ ;; move-files-by-attr-size-lt(Num-bytes,Dirname),file-size(Num-bytes),
+ ;; dest-dir-name(Dirname),file-name(Name),file-prepath(Source-prepath),
+ ;; dest-dir-prepath(Dest-prepath).
+
+ ;; rm(Source-prepath,Name)|
+ ;; move-files-by-attr-size-lt(Num-bytes,Dirname),file-size(Num-bytes),
+ ;; dest-dir-name(Dirname),file-name(Name),file-prepath(Source-prepath).
