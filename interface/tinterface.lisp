@@ -13,7 +13,8 @@
   (setf *rules* nil)
   (setf *constraints* nil)
   (setf *integrity-constraints* nil)
-  (setf *evidence* nil))
+  (setf *evidence* nil)
+  (setf *groundtruth* nil))
 
 
 ;;;;<2. Paths>
