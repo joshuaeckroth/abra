@@ -94,11 +94,13 @@
 (defun resolve-by-removal (b wrld wm)
   ;; remove all justifications for b
   (dolist (j (get-support b wrld))
+    (when *vocal* (format t "Removing justification:~%~T~A~%" j))
     (dolist (dead-b (remove-justification j wrld))
       ;; as we remove the justification, we'll end up removing b unless it's
       ;; a fact. in that case, we keep it around unjustified.
       (unless (fact? dead-b (world-parent wrld))
-	  (unbelieve dead-b wrld wm)))))
+        (when *vocal* (format t "Unbelieving ~A~%" dead-b))
+        (unbelieve dead-b wrld wm)))))
 
 
 
@@ -108,7 +110,7 @@
   (destructuring-bind (arg1 arg2) 
       (build-arguments (belief-depths blf1 wrld) (belief-depths blf2 wrld) wrld)
     (multiple-value-bind (winner score1 score2) (select-argument arg1 arg2 wrld)
-      ;(format t "~A (~A) vs.~%~T~A (~A) ~%" blf1 score1 blf2 score2)
+      (when *vocal* (format t "~A (~A) vs.~%~T~A (~A) ~%" blf1 score1 blf2 score2))
       (if (eq winner arg1)
 	  ;; keep blf1 
 	  (list wrld blf2)

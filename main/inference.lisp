@@ -664,18 +664,23 @@
 	;; we only want to move the justification if it doesn't violate constraints.
 	;; if it violates constraints, we have to keep the old version around.
 	(let ((new-j (clone-justification j sub-map)))
-	  ;; NOTE: our filtering of inconsistent justifications is slowly being replaced
-	  ;;       with a basic approach to belief revision, but we leave the hook here 
-	  ;;       for the moment.
-	  (unless (and *filter-inconsistent-justifications* (inconsistent-justification new-j))
-	    (setf (values added-j new-beliefs) (move-isolated-justification new-j (justification-home j wm) c wrld wm))
-	    (setf belief-list (append new-beliefs belief-list))
-	    ;; drop any beliefs that are no longer supported
-	    (dolist (empty-b (remove-justification-if-allowed (candidate-original-belief c) j wrld wm))
-	      ;; sometimes two beliefs might be linked by multiple justifications
-	      ;; that could lead to two attempts to zap the same belief
-	      (unless (or (fact? empty-b wrld) (null (belief-home empty-b wm)))
-		(unbelieve empty-b (belief-home empty-b wm) wm)))))))))
+          (unless (every #'(lambda (constraint)
+                             (every #'(lambda (b)
+                                        (not (null (literal-contradiction? (belief-content b) constraint))))
+                                    (get-beliefs-by-predicate (predicate-name constraint) nil wrld)))
+                         (justification-constraints new-j))
+            ;; NOTE: our filtering of inconsistent justifications is slowly being replaced
+            ;;       with a basic approach to belief revision, but we leave the hook here 
+            ;;       for the moment.
+            (unless (and *filter-inconsistent-justifications* (inconsistent-justification new-j))
+              (setf (values added-j new-beliefs) (move-isolated-justification new-j (justification-home j wm) c wrld wm))
+              (setf belief-list (append new-beliefs belief-list))
+              ;; drop any beliefs that are no longer supported
+              (dolist (empty-b (remove-justification-if-allowed (candidate-original-belief c) j wrld wm))
+                ;; sometimes two beliefs might be linked by multiple justifications
+                ;; that could lead to two attempts to zap the same belief
+                (unless (or (fact? empty-b wrld) (null (belief-home empty-b wm)))
+                  (unbelieve empty-b (belief-home empty-b wm) wm))))))))))
 
 ;;;;;;
 ;; apply-explanation
