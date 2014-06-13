@@ -122,8 +122,14 @@
 
 ;; true if a1 and a2 are the same constant or are both skolems.
 (defun equivalent-args? (a1 a2)
-  (or (eql a1 a2)
+  (or (equal a1 a2)
       (and (skolem? a1) (skolem? a2))))
+
+;; true if a1 and a2 are the same constant or one or both are skolems.
+(defun agreeable-args? (a1 a2)
+  (or (equal a1 a2)
+      (skolem? a1)
+      (skolem? a2)))
 
 ;; literals are equal if
 ;; (a) they have the same sign
@@ -141,17 +147,19 @@
 
 ;; literals contradict each other if 
 ;; (a) they have the same predicate
-;; (b) they have the same constants in the same positions
-;; (c) they have opposite valence
-;; (d) they have the same modal operators
-(defun literal-contradiction? (lit1 lit2 &key (test #'equivalent-args?) (exact-modals? nil))
+;; (b) they have the same modal operators
+;; (c) they are not "agreeable", i.e., unifiable
+;; NO LONGER: (d) they have opposite valence
+(defun literal-contradiction? (lit1 lit2 &key (test #'agreeable-args?) (exact-modals? nil))
   (and (literal? lit1) (literal? lit2)
        (match-modals? lit1 lit2 :exact? exact-modals?)
        (eql (predicate-name lit1) (predicate-name lit2))
-       (= (length (literal-args lit1)) (length (literal-args lit2)))
-       (not (mismatch (literal-args lit1) (literal-args lit2)
-		      :test test))
-       (if (negated? (modal-literal lit1)) (not (negated? (modal-literal lit2))) (negated? (modal-literal  lit2)))))
+       (mismatch (literal-args lit1) (literal-args lit2)
+                 :test test)))
+
+;; (if (negated? (modal-literal lit1)) (not (negated? (modal-literal lit2)))
+;;            (negated? (modal-literal lit2)))
+
 
 ;;; match-predicate?
 ;;;

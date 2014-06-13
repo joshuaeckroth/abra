@@ -145,48 +145,67 @@
 ;; remove candidates after the generation stage. Unification could
 ;; have led to justifications that violate temporal constraints,
 ;; pruning heuristics, or other potential requirements.
-(defun filter-abd (wm kb cands) cands
-#|  (hook-filter-inconsistent-jcandidates 
-   ;; filters inconsistent justifications when feature is turned on
-   (when cands
-    ;; Filter: Time Constraints
-    (let ((fcands (if *temporal-filter* (temporal-filter cands) cands)))
-      ;; Filter: Directionality Preferences
-      (when *divide-lookahead?* 
-	;; all candidates will have the same original belief...
-	(let* ((c (first cands))
-	       (cob (candidate-original-belief c))
-	       (cow (candidate-world c))
-	       (mlit (expand-modals cob cow (belief-home cob wm)))
-	       (cb (consequent-belief? cob cow 
-				       :no-dialog? 
-				       (dialog-hack cob)))
-	       (ab (antecedent-belief? cob cow 
-				       :no-dialog? 
-				       (dialog-hack cob))))
-	  (setf fcands 
-		(cond ((or (and (not cb) (not ab)) (and cb ab))
-		       cands)
-		      ((and (not cb) ab 
-			    (> (count-matching-rules mlit cob cow kb :key #'consequent-literals) 0))
-		       ;; keep only the candidates with belief in consequent
-		       (loop for x in cands
-			     when (in-consequent? (expand-modals (candidate-belief x) (candidate-world x) (belief-home x wm)) 
-						  (candidate-justification x))
-			       collect x))
-		      ((and (not ab) cb
-			    (> (count-matching-rules mlit cob cow kb :key #'antecedent-literals) 0))
-		       ;; keep only the candidates with belief in antecedent
-		       (loop for x in cands
-			     when (in-antecedent? (expand-modals (candidate-belief x) (candidate-world x) (belief-home x wm)) 
-						  (candidate-justification x))
-			       collect x))))))
+(defun filter-abd (wm kb cands)
+  ;; delete candidates that have constraints and at least one such
+  ;; constraint is not met
+  ;; (when *vocal*
+  ;;   (format t "Filtering from ~A:~%" (mapcar #'candidate-justification cands))
+  ;;   (let ((deletable (filter #'(lambda (cand)
+  ;;                                (some #'(lambda (constraint)
+                                  
+  ;;                                          (every #'(lambda (b)
+  ;;                                                     (not (null (literal-contradiction? (belief-content b) constraint))))
+  ;;                                                 (get-beliefs-by-predicate (predicate-name constraint) nil (candidate-world cand))))
+  ;;                                      (justification-constraints (candidate-justification cand))))
+  ;;                            cands)))
+  ;;     (format t "Deleting: ~A~%" deletable)))
+  (delete-if #'(lambda (cand)
+                 (some #'(lambda (constraint)
+                           (every #'(lambda (b) (not (null (literal-contradiction? (belief-content b) constraint))))
+                                  (get-beliefs-by-predicate (predicate-name constraint) nil (candidate-world cand))))
+                       (justification-constraints (candidate-justification cand))))
+             cands)
+  #|  (hook-filter-inconsistent-jcandidates 
+   ;; filters inconsistent justifications when feature is turned on ;
+  (when cands
+    ;; Filter: Time Constraints         ;
+  (let ((fcands (if *temporal-filter* (temporal-filter cands) cands)))
+      ;; Filter: Directionality Preferences ;
+  (when *divide-lookahead?* 
+	;; all candidates will have the same original belief... ;
+  (let* ((c (first cands))
+  (cob (candidate-original-belief c))
+  (cow (candidate-world c))
+  (mlit (expand-modals cob cow (belief-home cob wm)))
+  (cb (consequent-belief? cob cow 
+  :no-dialog? 
+  (dialog-hack cob)))
+  (ab (antecedent-belief? cob cow 
+  :no-dialog? 
+  (dialog-hack cob))))
+  (setf fcands 
+  (cond ((or (and (not cb) (not ab)) (and cb ab))
+  cands)
+  ((and (not cb) ab 
+  (> (count-matching-rules mlit cob cow kb :key #'consequent-literals) 0))
+		       ;; keep only the candidates with belief in consequent ;
+  (loop for x in cands
+  when (in-consequent? (expand-modals (candidate-belief x) (candidate-world x) (belief-home x wm)) 
+  (candidate-justification x))
+  collect x))
+  ((and (not ab) cb
+  (> (count-matching-rules mlit cob cow kb :key #'antecedent-literals) 0))
+		       ;; keep only the candidates with belief in antecedent ;
+  (loop for x in cands
+  when (in-antecedent? (expand-modals (candidate-belief x) (candidate-world x) (belief-home x wm)) 
+  (candidate-justification x))
+  collect x))))))
 
-      ;; Filter: Internal Contradictions
-      ;; get rid of justifications that contain X and (not X). we'll
-      ;; need to make contradictory-justification time aware when we
-      ;; reason about actions.
-      (delete-if  #'contradictory-justification fcands :key #'candidate-justification))))
+      ;; Filter: Internal Contradictions ;
+      ;; get rid of justifications that contain X and (not X). we'll ;
+      ;; need to make contradictory-justification time aware when we ;
+      ;; reason about actions.          ;
+  (delete-if  #'contradictory-justification fcands :key #'candidate-justification))))
 |#
 )
 

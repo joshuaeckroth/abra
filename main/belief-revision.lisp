@@ -1,12 +1,15 @@
 (in-package :abra)
 
 (defvar *mutex-preds* nil)
+(defvar *belief-conflict-test* nil)
 
 (defun support-strength (b wrld wm &key (test #'max))
-  (apply test (mapcar #'(lambda (j) (score-justification j wrld wm)) (get-support b wrld))))
+  (apply test
+         ;; add a 0 so that max or whatever has at least one value to work with
+         (cons 0 (mapcar #'(lambda (j) (score-justification j wrld wm)) (get-support b wrld)))))
 
 (defun revise-beliefs (potential-conflicts wm)
-  (revise-beliefs-arguments potential-conflicts wm))
+  (revise-beliefs-local-score potential-conflicts wm))
 
 ;; currently only suitable for the case where a belief conflicts with one other belief
 (defun revise-beliefs-arguments (potential-conflicts wm)
@@ -36,15 +39,24 @@
 	      (support-strength (second pc) (first pc) wm :test test)
 	      best-existing-score 
 	      (apply #'max (mapcar #'(lambda (x) (support-strength x (first pc) wm :test test)) current-conflicts)))
-;;	(format t "~A [~A] conflicts with ~A [~A]~%" (second pc) conflict-score current-conflicts best-existing-score)
-
-	(if (< conflict-score best-existing-score)
-	    ;; if there are any conflicts at all, we're going to retract
-	    ;; the new belief.  we're not going to prevent reintroduction
-	    ;; in any way since there's no support for that in the system.
-	    (resolve-by-removal (second pc) (first pc) wm)
-	    (dolist (x current-conflicts)
-	      (resolve-by-removal x (first pc) wm)))))))
+	(when *vocal*
+          (format t "~A [~A] conflicts with ~A [~A] (no facts? ~A)~%" (second pc) conflict-score current-conflicts best-existing-score
+                  (notany #'(lambda (c) (fact? c (wm-prime wm)))
+                          current-conflicts)))
+        ;; if at least one conflict is a fact, remove the new belief, not the fact
+        (if (some #'(lambda (c) (fact? c (wm-prime wm)))
+                  current-conflicts)
+            (progn (when *vocal* (format t "Removing ~A~%" (second pc)))
+                   (resolve-by-removal (second pc) (first pc) wm))
+            (if (or (< conflict-score best-existing-score))
+                ;; if there are any conflicts at all, we're going to retract
+                ;; the new belief.  we're not going to prevent reintroduction
+                ;; in any way since there's no support for that in the system.
+                (progn (when *vocal* (format t "Removing ~A~%" (second pc)))
+                       (resolve-by-removal (second pc) (first pc) wm))
+                (progn (when *vocal* (format t "Removing each of ~A~%" current-conflicts))
+                       (dolist (x current-conflicts)
+                         (resolve-by-removal x (first pc) wm)))))))))
 
 ;; if the given predicate conflicts with an existing literal in the
 ;; world, return a list of conflicting literal. mutex pred is a list
@@ -59,12 +71,22 @@
   ;; about the effect of negation right now. assume that all the
   ;; mutual exclusive constraints are concerned with positive
   ;; literals.
-  (let ((pred (predicate-name (belief-content blf))) conflicts)
+  (let ((pred (predicate-name (belief-content blf)))
+        conflicts)
+    (when *belief-conflict-test*
+      (dolist (b (get-beliefs-by-predicate pred nil world))
+        (when (funcall *belief-conflict-test* pred blf b)
+          (setf conflicts (cons b conflicts)))))
     (dolist (mx mutex-preds (remove blf conflicts))
       (when (member pred mx)
-	(setf conflicts (append (mappend #'(lambda (p) (get-beliefs-by-predicate p nil world)) 
-					 mx) 
-				conflicts))))))
+        (let ((blf-conflicts
+               (filter #'(lambda (b)
+                           (when *vocal*
+                             (format t "~A conflicts? ~A: ~A~%" blf b
+                                     (belief-contradiction? blf b)))
+                           (belief-contradiction? blf b))
+                       (mappend #'(lambda (p) (get-beliefs-by-predicate p nil world)) mx))))
+          (setf conflicts (append blf-conflicts conflicts)))))))
 
 ;; removes the specified belief from memory.
 ;; does not block it from being reintroduced.

@@ -1,5 +1,5 @@
 (create-rules
- 
+
  (:antecedent
   ((mov ?x1 ?y1 ?x2 ?y2 ?time1 ?color))
   :consequent
