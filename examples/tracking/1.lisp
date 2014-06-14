@@ -2,7 +2,7 @@
 
 (load-problem "tracking/scripts")
 (load-problem "tracking/kb")
-(load-problem "tracking/cases-easy-single")
+(load-problem "tracking/cases-numes-gray")
 
 
 ;; Usage:
