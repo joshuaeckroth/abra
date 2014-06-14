@@ -564,7 +564,7 @@
 	(setf best (first opt) score tmp)))
     ;; process the best one.
     ;; if it already exists, then there's nothing to do. (i think.)
-    (unless (find-justification-id best (justification-home j wm))
+    (unless (or (null best) (find-justification-id best (justification-home j wm)))
       (setf (values added-j new-beliefs) (fire-justification (clone-justification best) wrld wm)))
     (values added-j new-beliefs)))
 
@@ -604,7 +604,12 @@
 		;; NOTE: our filtering of inconsistent justifications is slowly being replaced
 		;;       with a basic approach to belief revision, but we leave the hook here 
 		;;       for the moment.
-		(if (and *filter-inconsistent-justifications* (inconsistent-justification new-j))
+		(if (or (and *filter-inconsistent-justifications* (inconsistent-justification new-j))
+                        (not (every #'(lambda (constraint)
+                                        (every #'(lambda (b)
+                                                   (not (null (literal-contradiction? (belief-content b) constraint))))
+                                               (get-beliefs-by-predicate (predicate-name constraint) nil wrld)))
+                                    (justification-constraints new-j))))
 		    (setf (gethash j ht2) t) ;; pass on update
 		    (progn 
 		      (setf (values added-j new-beliefs) 
