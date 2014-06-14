@@ -30,17 +30,33 @@
   (setf kb (create-kb))
   (setf wm (make-wm)))
 
-(defun compute-groundtruth-matches-pct (agent)
-  (let* ((gt-matches (remove-duplicates
+(defun compute-groundtruth-matches (agent)
+  (let* ((agent-beliefs (mapcar #'second (get-beliefs agent)))
+         (belief-test #'(lambda (b1 b2) (equal (belief-content b1)
+                                               (belief-content b2))))
+         (gt-preds (remove-duplicates (mapcar #'first *groundtruth*)))
+         (gt-matches (remove-duplicates
                       (filter #'(lambda (b)
                                   (and (not (fact? b agent))
                                        (member (belief-content b) *groundtruth*
                                                :test #'equal)))
-                              (mapcar #'second (get-beliefs agent)))
-                      :test #'(lambda (b1 b2) (equal (belief-content b1)
-                                                     (belief-content b2)))))
-         (gt-matches-pct (* 100.0 (/ (length gt-matches) (length *groundtruth*)))))
-    (list gt-matches gt-matches-pct)))
+                              agent-beliefs)
+                      :test belief-test))
+         (gt-mismatches (remove-duplicates
+                         (filter #'(lambda (b)
+                                     (and (not (fact? b agent))
+                                          (notany #'(lambda (arg) (skolem? arg)) (rest (belief-content b)))
+                                          (member (first (belief-content b)) gt-preds)
+                                          (not (member (belief-content b) *groundtruth*
+                                                       :test #'equal))))
+                                 agent-beliefs)
+                         :test belief-test))
+         (tp (length gt-matches))
+         (fp (length gt-mismatches))
+         (fn (- (length *groundtruth*) tp))
+         (prec (if (= 0 (+ tp fp)) 0.0 (float (/ tp (+ tp fp)))))
+         (recall (if (= 0 (+ tp fn)) 0.0 (float (/ tp (+ tp fn))))))
+    (list gt-matches tp fp fn prec recall)))
 
 (defun test-one-init (rules example)
   (initialize)
@@ -61,9 +77,10 @@
       (when (not (member (belief-id b) supported-beliefs))
         (format t "~T~A: ~A~%" (belief-id b) (belief-content b))))
     (when *groundtruth*
-      (destructuring-bind (gt-matches gt-matches-pct) (compute-groundtruth-matches-pct agent)
+      (destructuring-bind (gt-matches tp fp fn prec recall) (compute-groundtruth-matches agent)
         (format t "~%~%Groundtruth: ~A~%~%" *groundtruth*)
-        (format t "Groundtruth matches: (~A%)~%~T~A~%~%" gt-matches-pct gt-matches)))))
+        (format t "Groundtruth matches: (tp=~A fp=~A fn=~A prec=~A recall=~A)~%~T~A~%~%"
+                tp fp fn prec recall gt-matches)))))
 
 (defun test-one (steps example rules &optional (pb #'pick-belief-fewrules-unattached) (d? nil) (print? t))
   (test-one-init rules example)
@@ -76,17 +93,27 @@
   wm)
 
 (defun test-exp-cases (steps cases rules &optional (pb #'pick-belief-fewrules-unattached) (d? nil) (print? t))
-  (let ((groundtruth-pct-sum 0.0))
+  (let ((tp-sum 0)
+        (fp-sum 0)
+        (fn-sum 0))
     (dolist (c cases)
       (clearmem)
       (dolist (fact (exp-case-groundtruth c))
         (push fact *groundtruth*))
       (let ((wm (test-one steps (exp-case-evidence c) rules pb d? print?)))
-        (destructuring-bind (gt-matches gt-matches-pct)
-            (compute-groundtruth-matches-pct (wm-prime wm))
-          (declare (ignore gt-matches))
-          (setq groundtruth-pct-sum (+ gt-matches-pct groundtruth-pct-sum)))))
-    (format t "~A" (/ groundtruth-pct-sum (length cases)))))
+        (destructuring-bind (gt-matches tp fp fn prec recall)
+            (compute-groundtruth-matches (wm-prime wm))
+          (declare (ignore gt-matches)
+                   (ignore prec)
+                   (ignore recall))
+          (setq tp-sum (+ tp-sum tp))
+          (setq fp-sum (+ fp-sum fp))
+          (setq fn-sum (+ fn-sum fn)))))
+    (let ((prec (if (= 0 (+ tp-sum fp-sum)) 0.0
+                    (float (/ tp-sum (+ tp-sum fp-sum)))))
+          (recall (if (= 0 (+ tp-sum fn-sum)) 0.0
+                      (float (/ tp-sum (+ tp-sum fn-sum))))))
+      (list prec recall))))
 
 (defun inc-test-one (steps example rules &optional (plot? nil) (pb #'pick-belief-fewrules-unattached) (d? nil))
   (test-one-init rules (list (first example)))
