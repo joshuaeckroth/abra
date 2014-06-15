@@ -12,6 +12,8 @@
 		   (:print-function print-justification)
 		   (:predicate justification?))
   (id (make-justification-id) :type symbol :read-only t)
+  ;; NEW: save prior version of the justification when copying
+  (prior nil :read-only t)
   antecedent
   consequent
   constraints
@@ -20,13 +22,17 @@
 (defun print-justification  (j str d)
   (declare (ignore d))
   (if (justification-constraints j)
-      (format str "(~A: ~A => ~A) {~A}" (justification-id j) 
+      (format str "(~A: ~A => ~A) {~A} (Prior: ~A)" (justification-id j) 
 	      (justification-antecedent j) 
 	      (justification-consequent j)
-	      (justification-constraints j))
-      (format str "(~A: ~A => ~A)" (justification-id j) 
+	      (justification-constraints j)
+              (if (null (justification-prior j)) nil
+                  (justification-id (justification-prior j))))
+      (format str "(~A: ~A => ~A) (Prior: ~A)" (justification-id j) 
 	      (justification-antecedent j) 
-	      (justification-consequent j))))
+	      (justification-consequent j)
+              (if (null (justification-prior j)) nil
+                  (justification-id (justification-prior j))))))
 
 (defun skolemize (rl &optional (ht (make-hash-table :test #'eq)))
   (cond ((variable? rl)
@@ -193,10 +199,11 @@
   (labels ((clone-help (lts)
 	     (mapcar #'(lambda (x) (clone-literal x map)) lts)))
     (make-justification :id (if id id (make-justification-id))
-			    :antecedent (clone-help (justification-antecedent j))
-			    :consequent (clone-help (justification-consequent j))
-			    :constraints (clone-help (justification-constraints j))
-			    :contexts (copy-list (justification-contexts j)))))
+                        :antecedent (clone-help (justification-antecedent j))
+                        :consequent (clone-help (justification-consequent j))
+                        :constraints (clone-help (justification-constraints j))
+                        :contexts (copy-list (justification-contexts j))
+                        :prior (if *refire-justifications* j nil))))
 
 ;;; copy the internals of the justification to a new justification structure
 (defun copy-justification (j)
@@ -204,7 +211,8 @@
    :antecedent (justification-antecedent j)
    :consequent (justification-consequent j)
    :constraints (justification-constraints j)
-   :contexts (justification-contexts j)))
+   :contexts (justification-contexts j)
+   :prior (justification-prior j)))
 
 
 ;; consequent-literals

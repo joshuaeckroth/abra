@@ -2,6 +2,7 @@
 
 (defvar *mutex-preds* nil)
 (defvar *belief-conflict-test* nil)
+(defvar *refire-justifications* nil)
 
 (defun support-strength (b wrld wm &key (test #'max))
   (apply test
@@ -52,9 +53,9 @@
                 ;; if there are any conflicts at all, we're going to retract
                 ;; the new belief.  we're not going to prevent reintroduction
                 ;; in any way since there's no support for that in the system.
-                (progn (when *vocal* (format t "Removing ~A~%" (second pc)))
+                (progn (when *vocal* (format t "Beginning process of removing ~A~%" (second pc)))
                        (resolve-by-removal (second pc) (first pc) wm))
-                (progn (when *vocal* (format t "Removing each of ~A~%" current-conflicts))
+                (progn (when *vocal* (format t "Beginning process of removing each of ~A~%" current-conflicts))
                        (dolist (x current-conflicts)
                          (resolve-by-removal x (first pc) wm)))))))))
 
@@ -100,7 +101,11 @@
       ;; a fact. in that case, we keep it around unjustified.
       (unless (fact? dead-b (world-parent wrld))
         (when *vocal* (format t "Unbelieving ~A~%" dead-b))
-        (unbelieve dead-b wrld wm)))))
+        (unbelieve dead-b wrld wm)))
+    ;; NEW: re-introduce prior version of the removed justification
+    (when (not (null (justification-prior j)))
+      (when *vocal* (format t "Re-firing prior justification: ~A~%" (justification-prior j)))
+      (fire-justification (justification-prior j) wrld wm))))
 
 
 
