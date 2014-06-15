@@ -13,7 +13,9 @@
 
 (defun test-linux (repetitions)
   (format t "PickBelief,Steps,Precision,Recall,PartialAccuracy~%")
-  (dolist (pb '("pick-belief-random" "pick-belief-fewrules-unattached" "pick-belief-recency-unattached"))
+  (dolist (pb '("pick-belief-random" "pick-belief-fewrules-unattached"
+                "pick-belief-recency-unattached" "pick-belief-fewrules-uda"
+                "pick-belief-maximally-grounded" "pick-belief-minimally-grounded"))
     (dolist (steps '(100 250 500 1000 1500 2000))
       (loop for i from 1 to repetitions
          do (clearmem)
@@ -23,4 +25,4 @@
            (load-problem "linux/cases")
            (destructuring-bind (prec recall gt-pm-overall)
                (test-all-exp-cases steps (symbol-function (find-symbol (string-upcase pb) :abra)))
-             (format t "~A,~A,~A,~A,~A~%" pb steps prec recall gt-pm-overall))))))
+             (format t "~A,~A,~A,~A,~A~%" (subseq pb 12) steps prec recall gt-pm-overall))))))

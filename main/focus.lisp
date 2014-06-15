@@ -66,6 +66,32 @@
     (let ((world (bid-home id wm)))
       (make-focus (get-local-belief id world) world wm))))
 
+;; find maximally- or minimally-grounded beliefs, and randomly select one
+(defun pick-belief-grounded (wm kb min-max-fn)
+  (declare (ignore kb)) ;; used to keep the signature identical
+  (let* ((blfs (get-nested-beliefs (wm-prime wm)))
+         (extreme-skolem-count (apply min-max-fn
+                                      (mapcar #'(lambda (b)
+                                                  (length (filter #'skolem? (rest (belief-content (second b))))))
+                                              blfs)))
+         (blfs-with-extreme-skolem-count (filter #'(lambda (b)
+                                                     (= extreme-skolem-count
+                                                        (length (filter #'skolem? (rest (belief-content (second b)))))))
+                                                 blfs))
+         ;; now randomly choose one of these lowest-skolem-count beliefs
+         (blf (pick-random-elt blfs-with-extreme-skolem-count)))
+    (make-focus (second blf) (first blf) wm)))
+
+;; find maximally-grounded beliefs, and randomly select one
+(defun pick-belief-maximally-grounded (wm kb &key (agent (wm-prime wm)))
+  ;; use #'min here to find minimum number of skolems
+  (pick-belief-grounded wm kb #'min))
+
+;; find minimally-grounded beliefs, and randomly select one
+(defun pick-belief-minimally-grounded (wm kb &key (agent (wm-prime wm)))
+  ;; use #'max here to find minimum number of skolems
+  (pick-belief-grounded wm kb #'max))
+
 ;;; returns the most recently believed belief in the list.
 ;;; maximizes belief-start.
 (defun get-newest (cfs)
