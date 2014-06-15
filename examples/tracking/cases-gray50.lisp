@@ -1,5 +1,6 @@
 (setq *cases* (list
 (make-exp-case
+;; Seed: 5975452
 :groundtruth '(
 (mov 8 5 9 2 1 2 "#ffe1272a")
 (mov 0 8 1 7 1 2 "#ff9930af")
@@ -187,6 +188,7 @@
 )
 )
 (make-exp-case
+;; Seed: 5266994
 :groundtruth '(
 (mov 7 8 8 9 2 3 "#ff003e72")
 (mov 0 3 3 0 3 4 "#ffd0bff2")
@@ -376,6 +378,7 @@
 )
 )
 (make-exp-case
+;; Seed: 9412491
 :groundtruth '(
 (mov 0 3 2 1 6 7 "#ff245a32")
 (mov 9 1 8 0 6 7 "#ffd4c410")
@@ -572,6 +575,7 @@
 )
 )
 (make-exp-case
+;; Seed: 4872328
 :groundtruth '(
 (mov 2 6 3 9 2 3 "#ff682cdc")
 (mov 8 1 6 3 5 6 "#ffdf8bc4")
@@ -767,6 +771,7 @@
 )
 )
 (make-exp-case
+;; Seed: 6374174
 :groundtruth '(
 (mov 7 9 8 6 7 8 "#ff541cec")
 (mov 4 8 6 8 2 3 "#ff541cec")
@@ -957,6 +962,7 @@
 )
 )
 (make-exp-case
+;; Seed: 7331520
 :groundtruth '(
 (mov 0 8 1 9 5 6 "#ff320c00")
 (mov 2 7 5 4 7 8 "#ff01690a")
@@ -1150,6 +1156,7 @@
 )
 )
 (make-exp-case
+;; Seed: 2405364
 :groundtruth '(
 (mov 9 1 5 1 8 9 "#ff18fdfe")
 (mov 1 0 4 1 0 1 "#ff69e12b")
@@ -1345,6 +1352,7 @@
 )
 )
 (make-exp-case
+;; Seed: 2749539
 :groundtruth '(
 (mov 4 4 5 5 3 4 "#ff0faad8")
 (mov 7 3 8 2 1 2 "#ff7572a6")
@@ -1546,6 +1554,7 @@
 )
 )
 (make-exp-case
+;; Seed: 3851891
 :groundtruth '(
 (mov 9 4 8 3 3 4 "#ffc1b2f0")
 (mov 6 3 5 0 8 9 "#ffc1b2f0")
@@ -1744,6 +1753,7 @@
 )
 )
 (make-exp-case
+;; Seed: 1044906
 :groundtruth '(
 (mov 0 7 2 7 4 5 "#ff9e4597")
 (mov 9 7 8 6 2 3 "#ffa536ad")
@@ -1928,6 +1938,7 @@
 )
 )
 (make-exp-case
+;; Seed: 8791825
 :groundtruth '(
 (mov 8 1 7 0 9 10 "#ff4d0978")
 (mov 3 2 5 4 1 2 "#ff3b5002")
@@ -2122,6 +2133,7 @@
 )
 )
 (make-exp-case
+;; Seed: 1466016
 :groundtruth '(
 (mov 0 2 2 4 2 3 "#ff1ffcae")
 (mov 7 2 8 5 3 4 "#ff301421")
@@ -2325,6 +2337,7 @@
 )
 )
 (make-exp-case
+;; Seed: 8388903
 :groundtruth '(
 (mov 6 8 8 8 8 9 "#ff1d4193")
 (mov 4 1 5 4 3 4 "#ff76f15d")
@@ -2520,6 +2533,7 @@
 )
 )
 (make-exp-case
+;; Seed: 1288971
 :groundtruth '(
 (mov 3 3 5 5 0 1 "#ff9e516d")
 (mov 1 2 2 3 9 10 "#ffa09b42")
@@ -2702,6 +2716,7 @@
 )
 )
 (make-exp-case
+;; Seed: 7309677
 :groundtruth '(
 (mov 8 5 6 5 1 2 "#ff7d90fd")
 (mov 3 2 4 3 6 7 "#ff12d535")
@@ -2900,6 +2915,7 @@
 )
 )
 (make-exp-case
+;; Seed: 3332183
 :groundtruth '(
 (mov 1 3 1 5 8 9 "#ff54c343")
 (mov 4 9 3 6 5 6 "#ff3dcf39")
@@ -3097,6 +3113,7 @@
 )
 )
 (make-exp-case
+;; Seed: 8993350
 :groundtruth '(
 (mov 8 8 7 9 1 2 "#ffd5f06e")
 (mov 4 5 5 4 8 9 "#ff8a2053")
@@ -3291,6 +3308,7 @@
 )
 )
 (make-exp-case
+;; Seed: 8172970
 :groundtruth '(
 (mov 0 6 0 4 7 8 "#ff6be0ae")
 (mov 0 2 2 2 9 10 "#ff6be0ae")
@@ -3478,6 +3496,7 @@
 )
 )
 (make-exp-case
+;; Seed: 9907227
 :groundtruth '(
 (mov 3 2 1 2 7 8 "#ffbbe9e1")
 (mov 7 3 8 4 8 9 "#ff3bcd85")
@@ -3680,6 +3699,7 @@
 )
 )
 (make-exp-case
+;; Seed: 4107961
 :groundtruth '(
 (mov 1 1 0 0 2 3 "#ff5e3f0a")
 (mov 6 2 6 4 4 5 "#ff8b6dbc")
@@ -3874,6 +3894,7 @@
 )
 )
 (make-exp-case
+;; Seed: 1339398
 :groundtruth '(
 (mov 0 0 1 1 7 8 "#ff76c8ae")
 (mov 4 4 5 1 5 6 "#ff502d9a")
@@ -4068,6 +4089,7 @@
 )
 )
 (make-exp-case
+;; Seed: 5467397
 :groundtruth '(
 (mov 5 6 7 6 5 6 "#ff27d45e")
 (mov 9 0 7 0 6 7 "#fff35ac0")
@@ -4256,6 +4278,7 @@
 )
 )
 (make-exp-case
+;; Seed: 9848415
 :groundtruth '(
 (mov 8 0 8 2 1 2 "#ff5cb0ae")
 (mov 3 7 6 8 3 4 "#ffe95ba6")
@@ -4456,6 +4479,7 @@
 )
 )
 (make-exp-case
+;; Seed: 7763122
 :groundtruth '(
 (mov 9 7 7 7 1 2 "#ff5cbab1")
 (mov 7 3 9 5 3 4 "#ffb9be43")
@@ -4649,6 +4673,7 @@
 )
 )
 (make-exp-case
+;; Seed: 830623
 :groundtruth '(
 (mov 7 9 7 7 1 2 "#ff53b292")
 (mov 4 6 6 4 8 9 "#ff53b292")
@@ -4845,6 +4870,7 @@
 )
 )
 (make-exp-case
+;; Seed: 7462414
 :groundtruth '(
 (mov 4 4 3 3 3 4 "#ff26ac18")
 (mov 6 7 7 8 6 7 "#ff4801ae")
@@ -5032,6 +5058,7 @@
 )
 )
 (make-exp-case
+;; Seed: 9644868
 :groundtruth '(
 (mov 0 5 2 5 5 6 "#ff9b5692")
 (mov 2 5 4 7 6 7 "#ff9b5692")
@@ -5220,6 +5247,7 @@
 )
 )
 (make-exp-case
+;; Seed: 232381
 :groundtruth '(
 (mov 1 8 3 8 4 5 "#ffed1d8c")
 (mov 6 3 8 5 4 5 "#ff3743ee")
@@ -5408,6 +5436,7 @@
 )
 )
 (make-exp-case
+;; Seed: 5504370
 :groundtruth '(
 (mov 2 5 0 3 7 8 "#ffd12888")
 (mov 0 3 1 2 8 9 "#ffd12888")
@@ -5593,6 +5622,7 @@
 )
 )
 (make-exp-case
+;; Seed: 6251463
 :groundtruth '(
 (mov 6 2 3 3 9 10 "#ff287488")
 (mov 4 3 4 5 1 2 "#ff43d2aa")
