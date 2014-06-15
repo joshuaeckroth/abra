@@ -33,21 +33,21 @@
 (defun compute-groundtruth-matches (agent)
   (let* ((belief-test #'(lambda (b1 b2) (equal (belief-content b1)
                                                (belief-content b2))))
-         (agent-beliefs (remove-duplicates (mapcar #'second (get-beliefs agent))
-                                           :test belief-test))
+         (agent-blfs (remove-duplicates (mapcar #'second (get-beliefs agent))
+                                        :test belief-test))
          (gt-preds (remove-duplicates (mapcar #'first *groundtruth*)))
          (gt-matches (filter #'(lambda (b)
                                  (and (not (fact? b agent))
                                       (member (belief-content b) *groundtruth*
                                               :test #'equal)))
-                             agent-beliefs))
+                             agent-blfs))
          (gt-mismatches (filter #'(lambda (b)
                                     (and (not (fact? b agent))
                                          (notany #'(lambda (arg) (skolem? arg)) (rest (belief-content b)))
                                          (member (first (belief-content b)) gt-preds)
                                          (not (member (belief-content b) *groundtruth*
                                                       :test #'equal))))
-                                agent-beliefs))
+                                agent-blfs))
          (tp (length gt-matches))
          (fp (length gt-mismatches))
          (fn (- (length *groundtruth*) tp))
@@ -68,7 +68,7 @@
                                                      (literal-equal? (belief-content b) g :test #'agreeable-args?))
                                                  *groundtruth*)))
                                 (list b gts)))
-                          agent-beliefs)))
+                          agent-blfs)))
          ;; now compute the fraction of matches for each matching belief/groundtruth literal pair
          (gt-partial-matches-fractions
           (mappend #'(lambda (pair)
@@ -85,9 +85,19 @@
                    gt-partial-matches))
          (gt-partial-matches-avg (if (null gt-partial-matches-fractions) 0.0
                                      (float (/ (reduce #'+ gt-partial-matches-fractions)
-                                               (length gt-partial-matches-fractions))))))
+                                               (length gt-partial-matches-fractions)))))
+         ;; compute unexplained beliefs
+         (supported-beliefs (mappend #'(lambda (j) (mapcar #'(lambda (b) (belief-id (second b)))
+                                                           (get-supported-beliefs j (agent-beliefs agent))))
+                                     (get-justifications agent)))
+         (unexplained-beliefs (filter #'(lambda (b) (not (member (belief-id b) supported-beliefs))) agent-blfs))
+         ;; unexp-evidence-ratio is ratio of unexplained beliefs to evidence
+         (unexp-evidence-ratio (float (/ (length unexplained-beliefs)
+                                         (length (filter #'(lambda (b) (fact? b agent))
+                                                         agent-blfs))))))
     (list gt-matches tp fp fn prec recall
-          gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg)))
+          gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg
+          unexp-evidence-ratio)))
 
 (defun test-one-init (rules example)
   (initialize)
@@ -98,26 +108,32 @@
 
 (defun test-one-print ()
   (let* ((agent (wm-prime wm))
+         (belief-test #'(lambda (b1 b2) (equal (belief-content b1)
+                                               (belief-content b2))))
+         (agent-blfs (remove-duplicates (mapcar #'second (get-beliefs agent))
+                                        :test belief-test))
          (supported-beliefs (mappend #'(lambda (j) (mapcar #'(lambda (b) (belief-id (second b)))
                                                            (get-supported-beliefs j (agent-beliefs agent))))
-                                     (get-justifications agent))))
+                                     (get-justifications agent)))
+         (unexplained-beliefs (filter #'(lambda (b) (not (member (belief-id b) supported-beliefs))) agent-blfs)))
     (print-agent agent)
     (format t "~%~%Supported beliefs: ~A~%" supported-beliefs)
     (format t "~%Unexplained:~%")
-    (dolist (b (mapcar #'second (get-beliefs agent)))
-      (when (not (member (belief-id b) supported-beliefs))
-        (format t "~T~A: ~A~%" (belief-id b) (belief-content b))))
+    (dolist (b unexplained-beliefs)
+      (format t "~T~A: ~A~%" (belief-id b) (belief-content b)))
     (when *groundtruth*
       (destructuring-bind
             (gt-matches tp fp fn prec recall
-                        gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg)
+                        gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg
+                        unexp-evidence-ratio)
           (compute-groundtruth-matches agent)
         (format t "~%~%Groundtruth: ~A~%~%" *groundtruth*)
         (format t "Groundtruth matches: (tp=~A fp=~A fn=~A prec=~A recall=~A)~%~T~A~%~%"
                 tp fp fn prec recall gt-matches)
         (format t "Partial matches: ~A~%" gt-partial-matches)
         (format t "Partial match fractions: ~A~%" gt-partial-matches-fractions)
-        (format t "Partial matches avg: ~A~%" gt-partial-matches-avg)))))
+        (format t "Partial matches avg: ~A~%" gt-partial-matches-avg)
+        (format t "Unexplained/evidence ratio: ~A~%" unexp-evidence-ratio)))))
 
 (defun test-one (steps example rules &optional (pb #'pick-belief-fewrules-unattached) (d? nil) (print? t))
   (test-one-init rules example)
@@ -133,14 +149,16 @@
   (let ((tp-sum 0)
         (fp-sum 0)
         (fn-sum 0)
-        (gt-pm-avg 0.0))
+        (gt-pm-avg 0.0)
+        (unexp-avg 0.0))
     (dolist (c cases)
       (clearmem)
       (dolist (fact (exp-case-groundtruth c))
         (push fact *groundtruth*))
       (let ((wm (test-one steps (exp-case-evidence c) rules pb d? print?)))
         (destructuring-bind (gt-matches tp fp fn prec recall
-                                        gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg)
+                                        gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg
+                                        unexp-evidence-ratio)
             (compute-groundtruth-matches (wm-prime wm))
           (declare (ignore gt-matches)
                    (ignore prec)
@@ -150,14 +168,17 @@
           (setq tp-sum (+ tp-sum tp))
           (setq fp-sum (+ fp-sum fp))
           (setq fn-sum (+ fn-sum fn))
-          (setq gt-pm-avg (+ gt-pm-avg gt-partial-matches-avg)))))
+          (setq gt-pm-avg (+ gt-pm-avg gt-partial-matches-avg))
+          (setq unexp-avg (+ unexp-avg unexp-evidence-ratio)))))
     (let ((prec (if (= 0 (+ tp-sum fp-sum)) 0.0
                     (float (/ tp-sum (+ tp-sum fp-sum)))))
           (recall (if (= 0 (+ tp-sum fn-sum)) 0.0
                       (float (/ tp-sum (+ tp-sum fn-sum)))))
           (gt-pm-avg-overall (if (null cases) 0.0
-                                 (/ gt-pm-avg (length cases)))))
-      (list prec recall gt-pm-avg-overall))))
+                                 (/ gt-pm-avg (length cases))))
+          (unexp-avg-overall (if (null cases) 0.0
+                                 (/ unexp-avg (length cases)))))
+      (list prec recall gt-pm-avg-overall unexp-avg-overall))))
 
 (defun inc-test-one (steps example rules &optional (plot? nil) (pb #'pick-belief-fewrules-unattached) (d? nil))
   (test-one-init rules (list (first example)))

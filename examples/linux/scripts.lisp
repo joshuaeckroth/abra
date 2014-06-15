@@ -12,7 +12,7 @@
   (test-exp-cases steps *cases* *rules* pb nil print?))
 
 (defun test-linux (repetitions)
-  (format t "PickBelief,Steps,Precision,Recall,PartialAccuracy~%")
+  (format t "PickBelief,Steps,Precision,Recall,PartialAccuracy,Unexplained~%")
   (dolist (pb '("pick-belief-random" "pick-belief-fewrules-unattached"
                 "pick-belief-recency-unattached" "pick-belief-fewrules-uda"
                 "pick-belief-maximally-grounded" "pick-belief-minimally-grounded"))
@@ -23,6 +23,7 @@
            (load-problem "linux/kb")
            (load-problem "linux/evidence")
            (load-problem "linux/cases")
-           (destructuring-bind (prec recall gt-pm-overall)
+           (destructuring-bind (prec recall gt-pm-overall unexp-avg-overall)
                (test-all-exp-cases steps (symbol-function (find-symbol (string-upcase pb) :abra)))
-             (format t "~A,~A,~A,~A,~A~%" (subseq pb 12) steps prec recall gt-pm-overall))))))
+             (format t "~A,~A,~A,~A,~A,~A~%"
+                     (subseq pb 12) steps prec recall gt-pm-overall unexp-avg-overall))))))
