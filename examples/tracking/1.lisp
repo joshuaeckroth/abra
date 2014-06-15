@@ -2,10 +2,10 @@
 
 (load-problem "tracking/scripts")
 (load-problem "tracking/kb")
-(load-problem "tracking/cases-gray50")
+(load-problem "tracking/cases-easy-single")
 
 (defun test-tracking (repetitions)
-  (format t "Cases,PickBelief,Steps,Precision,Recall~%")
+  (format t "Cases,PickBelief,Steps,Precision,Recall,PartialAccuracy~%")
   (dolist (cases '("cases-easy" "cases-gray50"))
     (dolist (pb '("pick-belief-random" "pick-belief-fewrules-unattached" "pick-belief-recency-unattached"))
       (dolist (steps '(100 250 500 1000 1500 2000))
@@ -14,9 +14,9 @@
              (load-problem "tracking/scripts")
              (load-problem "tracking/kb")
              (load-problem (format nil "tracking/~A" cases))
-             (destructuring-bind (prec recall)
+             (destructuring-bind (prec recall gt-pm-overall)
                  (test-all-exp-cases steps (symbol-function (find-symbol (string-upcase pb) :abra)))
-               (format t "~A,~A,~A,~A,~A~%" cases pb steps prec recall)))))))
+               (format t "~A,~A,~A,~A,~A,~A~%" cases pb steps prec recall gt-pm-overall)))))))
 
 ;; Usage:
 ;; (load-problem "tracking/1")
