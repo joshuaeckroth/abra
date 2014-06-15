@@ -15,7 +15,7 @@
   (dolist (i (get-beliefs agent))
     (when (fact? (second i) agent)
       (format t "~T~A~%" (second i))))
-  
+
   (format t "Assumptions:~%")
   (dolist (i (get-beliefs agent))
     (unless (fact? (second i) agent)

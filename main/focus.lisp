@@ -175,7 +175,7 @@
 				  (funcall scope-fn (second x))
 				  :test #'literal-equal?))
 	    (belief-weak-links (focus-belief cf)))))
-  
+
 ;;;;;;
 ;; antecedent-belief?
 ;;
