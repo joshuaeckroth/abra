@@ -203,7 +203,9 @@
                         :consequent (clone-help (justification-consequent j))
                         :constraints (clone-help (justification-constraints j))
                         :contexts (copy-list (justification-contexts j))
-                        :prior (if *refire-justifications* j nil))))
+                        :prior (if (and *refire-justifications*
+                                        (not (equal 'JNEW (justification-id j))))
+                                   j nil))))
 
 ;;; copy the internals of the justification to a new justification structure
 (defun copy-justification (j)
