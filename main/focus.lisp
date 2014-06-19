@@ -84,13 +84,24 @@
 
 ;; find maximally-grounded beliefs, and randomly select one
 (defun pick-belief-maximally-grounded (wm kb &key (agent (wm-prime wm)))
-  ;; use #'min here to find minimum number of skolems
+  ;; use #'min here to find maximum number of skolems
   (pick-belief-grounded wm kb #'min))
 
 ;; find minimally-grounded beliefs, and randomly select one
 (defun pick-belief-minimally-grounded (wm kb &key (agent (wm-prime wm)))
   ;; use #'max here to find minimum number of skolems
   (pick-belief-grounded wm kb #'max))
+
+;; if an unexplained belief exists, pick one randomly; otherwise, pick any random belief
+(defun pick-belief-unexplained (wm kb &key (agent (wm-prime wm)))
+  (multiple-value-bind (explained-beliefs unexplained-beliefs)
+      (get-explained-and-unexplained-beliefs agent)
+    (declare (ignore explained-beliefs))
+    (let* ((all-blfs (get-nested-beliefs agent))
+           (blf (if (null unexplained-beliefs)
+                    (pick-random-elt all-blfs)
+                    (pick-random-elt unexplained-beliefs))))
+      (make-focus (second blf) (first blf) wm))))
 
 ;;; returns the most recently believed belief in the list.
 ;;; maximizes belief-start.

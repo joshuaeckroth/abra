@@ -107,41 +107,36 @@
 )
 
 (defun test-one-print ()
-  (let* ((agent (wm-prime wm))
-         (belief-test #'(lambda (b1 b2) (equal (belief-content b1)
-                                               (belief-content b2))))
-         (agent-blfs (remove-duplicates (mapcar #'second (get-beliefs agent))
-                                        :test belief-test))
-         (supported-beliefs (mappend #'(lambda (j) (mapcar #'(lambda (b) (belief-id (second b)))
-                                                           (get-supported-beliefs j (agent-beliefs agent))))
-                                     (get-justifications agent)))
-         (unexplained-beliefs (filter #'(lambda (b) (not (member (belief-id b) supported-beliefs))) agent-blfs)))
-    (print-agent agent)
-    (format t "~%~%Supported beliefs: ~A~%" supported-beliefs)
-    (format t "~%Unexplained:~%")
-    (dolist (b unexplained-beliefs)
-      (format t "~T~A: ~A~%" (belief-id b) (belief-content b)))
-    (when *groundtruth*
-      (destructuring-bind
-            (gt-matches tp fp fn prec recall
-                        gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg
-                        unexp-evidence-ratio)
-          (compute-groundtruth-matches agent)
-        (format t "~%~%Groundtruth: ~A~%~%" *groundtruth*)
-        (format t "Groundtruth matches: (tp=~A fp=~A fn=~A prec=~A recall=~A)~%~T~A~%~%"
-                tp fp fn prec recall gt-matches)
-        (format t "Partial matches: ~A~%" gt-partial-matches)
-        (format t "Partial match fractions: ~A~%" gt-partial-matches-fractions)
-        (format t "Partial matches avg: ~A~%" gt-partial-matches-avg)
-        (format t "Unexplained/evidence ratio: ~A~%" unexp-evidence-ratio)))))
+  (let ((agent (wm-prime wm)))
+    (multiple-value-bind (explained-beliefs unexplained-beliefs)
+        (get-explained-and-unexplained-beliefs agent)
+      (print-agent agent)
+      (format t "~%~%Explained beliefs: ~A~%" explained-beliefs)
+      (format t "~%Unexplained:~%")
+      (dolist (b unexplained-beliefs)
+        (format t "~T~A: ~A~%" (belief-id (second b)) (belief-content (second b))))
+      (when *groundtruth*
+        (destructuring-bind
+              (gt-matches tp fp fn prec recall
+                          gt-partial-matches gt-partial-matches-fractions gt-partial-matches-avg
+                          unexp-evidence-ratio)
+            (compute-groundtruth-matches agent)
+          (format t "~%~%Groundtruth: ~A~%~%" *groundtruth*)
+          (format t "Groundtruth matches: (tp=~A fp=~A fn=~A prec=~A recall=~A)~%~T~A~%~%"
+                  tp fp fn prec recall gt-matches)
+          (format t "Partial matches: ~A~%" gt-partial-matches)
+          (format t "Partial match fractions: ~A~%" gt-partial-matches-fractions)
+          (format t "Partial matches avg: ~A~%" gt-partial-matches-avg)
+          (format t "Unexplained/evidence ratio: ~A~%" unexp-evidence-ratio))))))
 
 (defun test-one (steps example rules &optional (pb #'pick-belief-fewrules-unattached) (d? nil) (print? t))
   (test-one-init rules example)
-  (dotimes (i steps) (infer wm kb
-			    :bc-only? nil
-			    :focused? nil :p -1
-			    :pick-belief pb
-			    :deduction? d?))
+  (dotimes (i steps)
+    (infer wm kb
+           :bc-only? nil
+           :focused? nil :p -1
+           :pick-belief pb
+           :deduction? d?))
   (when print? (test-one-print))
   wm)
 

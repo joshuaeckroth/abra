@@ -134,13 +134,15 @@
 (defun test-all-exp-cases (steps &optional (pb #'pick-belief-fewrules-unattached) (print? nil))
   (test-exp-cases steps *cases* *rules* pb nil print?))
 
+;; '("pick-belief-random" "pick-belief-fewrules-unattached"
+;;   "pick-belief-recency-unattached" "pick-belief-fewrules-uda"
+;;   "pick-belief-maximally-grounded" "pick-belief-minimally-grounded")
+
 (defun test-tracking (repetitions)
   (format t "Cases,PickBelief,Steps,Refire,Precision,Recall,PartialAccuracy,Unexplained~%")
   (dolist (cases '("cases-easy" "cases-gray50"))
-    (dolist (pb '("pick-belief-random" "pick-belief-fewrules-unattached"
-                  "pick-belief-recency-unattached" "pick-belief-fewrules-uda"
-                  "pick-belief-maximally-grounded" "pick-belief-minimally-grounded"))
-      (dolist (steps '(100 250 500 1000 1500 2000))
+    (dolist (pb '("pick-belief-random" "pick-belief-unexplained" "pick-belief-maximally-grounded"))
+      (dolist (steps '(100 500 1000))
         (dolist (refire '(t nil))
           (loop for i from 1 to repetitions
              do (clearmem)
