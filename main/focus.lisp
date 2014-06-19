@@ -103,6 +103,24 @@
                     (pick-random-elt unexplained-beliefs))))
       (make-focus (second blf) (first blf) wm))))
 
+(defun pick-belief-unexplained-minimally-grounded (wm kb &key (agent (wm-prime wm)))
+  (multiple-value-bind (explained-beliefs unexplained-beliefs)
+      (get-explained-and-unexplained-beliefs agent)
+    (declare (ignore explained-beliefs))
+    (if (null unexplained-beliefs)
+        (pick-belief-minimally-grounded wm kb)
+        (let ((blf (pick-random-elt unexplained-beliefs)))
+          (make-focus (second blf) (first blf) wm)))))
+
+(defun pick-belief-unexplained-maximally-grounded (wm kb &key (agent (wm-prime wm)))
+  (multiple-value-bind (explained-beliefs unexplained-beliefs)
+      (get-explained-and-unexplained-beliefs agent)
+    (declare (ignore explained-beliefs))
+    (if (null unexplained-beliefs)
+        (pick-belief-maximally-grounded wm kb)
+        (let ((blf (pick-random-elt unexplained-beliefs)))
+          (make-focus (second blf) (first blf) wm)))))
+
 ;;; returns the most recently believed belief in the list.
 ;;; maximizes belief-start.
 (defun get-newest (cfs)

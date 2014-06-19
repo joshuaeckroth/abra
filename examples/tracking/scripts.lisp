@@ -141,8 +141,9 @@
 (defun test-tracking (repetitions)
   (format t "Cases,PickBelief,Steps,Refire,Precision,Recall,PartialAccuracy,Unexplained~%")
   (dolist (cases '("cases-easy" "cases-gray50"))
-    (dolist (pb '("pick-belief-random" "pick-belief-unexplained" "pick-belief-maximally-grounded"))
-      (dolist (steps '(100 500 1000))
+    (dolist (pb '("pick-belief-random" "pick-belief-unexplained" "pick-belief-maximally-grounded"
+                  "pick-belief-unexplained-minimally-grounded" "pick-belief-unexplained-maximally-grounded"))
+      (dolist (steps '(100 300 500))
         (dolist (refire '(t nil))
           (loop for i from 1 to repetitions
              do (clearmem)
